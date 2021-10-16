@@ -1,0 +1,33 @@
+.navigation-card__menu_button {
+    padding: 0;
+    margin: auto;
+    margin-left: 32px;
+    margin-top: 29px;
+    width: 50px;
+    height: 24px;
+    border: none;
+    background-color: transparent;
+    display: none;
+    background-image: url(../../../../../images/menubutton.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.navigation-card__menu_button:hover {
+    opacity: 0.7;
+}
+
+@media screen and (max-width: 890px) {
+    .navigation-card__menu_button {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .navigation-card__menu_button {
+        width: 43.5px;
+        height: 21px;
+        margin-right: 24.15px;
+    }
+}

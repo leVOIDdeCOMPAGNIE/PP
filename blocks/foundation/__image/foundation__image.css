@@ -1,0 +1,25 @@
+.foundation__image {
+  width: 190.32px;
+  height: 234.27px;
+  margin-top: -2px;
+  margin-right: 85px;
+}
+
+@media screen and (max-width: 640px) {
+  .foundation__image {
+    width: 151px;
+    height: 226px;
+    margin-right: 35px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .foundation__image {
+    width: 93px;
+    height: 150px;
+    margin-right: 0;
+    margin-left: 21px;
+    margin-bottom: -7px;
+    align-self: flex-end;
+  }
+}

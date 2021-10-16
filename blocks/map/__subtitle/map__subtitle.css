@@ -1,0 +1,21 @@
+.map__subtitle {
+  color: #5b5b5b;
+  font-weight: normal;
+  font-size: 15px;
+  margin-left: 107px;
+}
+
+@media (max-width: 959px) {
+  .map__subtitle {
+    font-size: 12px;
+    margin-left: 40px;
+  }
+}
+
+@media (max-width: 639px) {
+  .map__subtitle {
+    font-size: 11px;
+    margin-left: 25px;
+  }
+}
+

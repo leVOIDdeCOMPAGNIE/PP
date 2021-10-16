@@ -1,0 +1,6 @@
+.partners__slider_items {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  overflow: hidden;
+}

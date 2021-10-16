@@ -1,0 +1,13 @@
+.news__link{
+    margin: 0px 120px 30px 0px;
+    padding: 0;
+    display: block;
+    text-align: right;
+    font-family: Golos, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    text-decoration-line: underline;
+    color: #5B5B5B;
+}

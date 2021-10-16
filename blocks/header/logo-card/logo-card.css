@@ -1,0 +1,8 @@
+.logo-card {
+    position: relative;
+    display: flex;
+}
+
+@media screen and (max-width: 890px) {
+    .logo-card {}
+}

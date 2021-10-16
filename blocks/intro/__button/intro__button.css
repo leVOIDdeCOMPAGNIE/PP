@@ -1,0 +1,14 @@
+.intro__button{
+    width: 167.37px;
+    height: 39.16px;
+    background: hsl(293, 86%, 26%);
+    border-radius: 20px;
+    border-style: none;
+    cursor: pointer;
+    color: hsl(0, 0%, 100%);
+    font-family: Golos, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14.9775px;
+    line-height: 18px;
+}

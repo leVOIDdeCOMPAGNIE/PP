@@ -1,0 +1,8 @@
+.newCard{
+    margin: 0;
+    padding: 10px;
+    width: 100%;
+    max-width: 135px;
+    background: #FFFFFF;
+    position: relative; 
+}

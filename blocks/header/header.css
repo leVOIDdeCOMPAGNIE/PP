@@ -1,0 +1,14 @@
+.header {
+    margin: 0 auto;
+    width: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 155px;
+}
+
+@media screen and (max-width: 550px) {
+    .header {
+        grid-template-columns: 1fr auto;
+        grid-template-rows: 120px;
+    }
+}

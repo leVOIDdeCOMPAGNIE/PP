@@ -1,0 +1,5 @@
+.map__map-container {
+  margin: 11px 0 26px 0;
+  display: flex;
+  justify-content: center;
+}

@@ -1,0 +1,15 @@
+.footer__copyright {
+  margin: 10px 120px 0 auto;
+  padding-bottom: 30px;
+  font-family: Golos, sans-serif;
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 13px;
+  color: #FEFEFE;  
+}
+
+@media screen and (max-width: 700px) {
+  .footer__copyright {     
+    margin-right: auto;
+  }
+}

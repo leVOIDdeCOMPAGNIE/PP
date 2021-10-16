@@ -1,0 +1,23 @@
+.logo-card__pazzle {
+    position: relative;
+    align-self: flex-end;
+    margin: auto;
+    margin-right: 35px;
+    margin-top: 58.5px;
+}
+
+@media screen and (max-width: 890px) {
+    .logo-card__pazzle {
+        width: 36px;
+        height: 43px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .logo-card__pazzle {
+        width: 18.5px;
+        height: 22px;
+        margin-right: 0;
+        margin-top: 38px;
+    }
+}

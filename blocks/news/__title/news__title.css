@@ -1,0 +1,12 @@
+.news__title{
+    margin: 0px 120px 10px 0px;
+    padding: 0;
+    text-align: right;
+    text-transform: uppercase;
+    font-family: Golos, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 42px;
+    line-height: 50px;
+    color: #00926F;
+}

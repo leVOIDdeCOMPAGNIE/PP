@@ -1,0 +1,33 @@
+.foundation__content {
+  display: flex;
+  flex-direction: column;
+  padding-top: 54.37px;
+  padding-bottom: 72px;
+  margin: 0 17px;
+  max-width: 387px;
+  margin-left: 240px; 
+}
+
+@media screen and (max-width: 800px) {
+  .foundation__content {
+    margin-left: 155px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .foundation__content {
+    padding-top: 16px;
+    padding-bottom: 72px;
+    max-width: 273px;    
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .foundation__content {    
+    margin-left: 0;
+    padding-top: 20px;
+    padding-bottom: 35.5px;
+    max-width: 177px; 
+    margin-right: 9px;
+  }
+}

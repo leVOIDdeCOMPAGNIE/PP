@@ -1,0 +1,14 @@
+.newCard__content{
+    max-height: 20px;
+    margin: 0 0 10px 0;
+    padding: 0;
+    font-family: Golos, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 8.4367px;
+    line-height: 10px;
+    color: #5B5B5B;
+    text-overflow: ellipsis;
+    /* white-space: nowrap; */
+    overflow: hidden;
+}

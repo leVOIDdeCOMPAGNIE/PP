@@ -1,0 +1,15 @@
+.newCard__link{
+    margin: 0;
+    padding: 0;
+    display: block;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    text-transform: uppercase;
+    font-family: Golos, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 9px;
+    line-height: 10px;
+    color: #9D9E9E;
+}

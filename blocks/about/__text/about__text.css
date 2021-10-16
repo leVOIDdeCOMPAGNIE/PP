@@ -1,0 +1,11 @@
+.about__text{
+    width: 180px;
+    font-family: Golos, sans-serif;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 7px;
+    line-height: 8px;
+    color: #6D097A;
+    margin: 0;
+    padding: 18px 0 0 29px;
+}

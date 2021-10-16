@@ -1,0 +1,8 @@
+.footer__social-icon {
+  width: 30px;
+  transition: all .1s ease; 
+}
+
+.footer__social-icon:hover {
+  width: 33px;
+}

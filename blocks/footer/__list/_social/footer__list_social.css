@@ -1,0 +1,6 @@
+.footer__list_social {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  min-width: 170px;
+}

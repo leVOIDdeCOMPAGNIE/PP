@@ -1,0 +1,34 @@
+.foundation__button {
+  border-radius: 20px;
+  padding: 8px 22px;
+  background-color: #9A34A8;
+  border: #9A34A8 solid 2px;
+  font-family: Golos, sans-serif;
+  font-weight: normal;
+  font-size: 15px;   
+  text-transform: uppercase;
+  color: #FEFEFE;
+  text-decoration: none;
+  align-self: flex-end;
+  margin-right: 36px;
+  transition: all .3s ease;
+}
+
+.foundation__button:hover {
+  background-color: transparent;
+  border: #FEFEFE solid 2px;
+}
+
+@media screen and (max-width: 800px) {
+  .foundation__button {     
+    margin-right: 5px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .foundation__button {    
+    font-size: 9px;
+    padding: 6px 15px;
+    margin-right: 22px;
+  }
+}
