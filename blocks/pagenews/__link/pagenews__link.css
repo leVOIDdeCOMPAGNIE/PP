@@ -1,0 +1,14 @@
+.pagenews__link{
+    margin: 0;
+    margin-bottom: 52px;
+    padding: 0;
+    width: 84%;
+    align-self: flex-end;
+    font-family: Golos, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 17px;
+    text-decoration-line: underline;
+    color: #666666;
+}

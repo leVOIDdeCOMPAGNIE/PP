@@ -1,0 +1,20 @@
+.foundation__description {
+  margin: 0 0 32px 0;  
+  font-family: Golos, sans-serif;
+  font-weight: normal;
+  font-size: 11px;
+  font-weight: 400;
+  color: #FEFEFE;  
+}
+
+@media screen and (max-width: 640px) {
+  .foundation__description {
+    margin-bottom: 41px;    
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .foundation__description {
+    margin-bottom: 76px;    
+  }
+}

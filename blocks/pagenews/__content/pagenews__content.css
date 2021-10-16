@@ -1,0 +1,13 @@
+.pagenews__content{
+    margin: 0;
+    margin-bottom: 40px;
+    padding: 0;
+    max-width: 84%;
+    align-self: flex-end;
+    font-family: Golos, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 23px;
+    color: #333333;
+}

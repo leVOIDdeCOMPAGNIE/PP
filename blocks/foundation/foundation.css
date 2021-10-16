@@ -1,0 +1,22 @@
+.foundation {
+    background-color: #00926F;
+    margin: auto;
+    margin-bottom: 141px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    position: relative;
+}
+
+  @media screen and (max-width: 640px) {
+    .foundation {
+      margin-bottom: 100px;
+    }
+  }
+
+  @media screen and (max-width: 540px) {
+    .foundation {      
+      flex-direction: row-reverse;
+      justify-content: space-between;
+    }
+  }

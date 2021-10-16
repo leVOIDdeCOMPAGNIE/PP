@@ -1,0 +1,30 @@
+@font-face {
+    font-family: 'Golos';
+    src: url(./Golos-UI/Golos-UI_Bold.ttf) format('truetype');
+    src: url(./Golos-UI/Golos-UI_Bold.woff) format('woff');
+    src: url(./Golos-UI/Golos-UI_Bold.woff2) format('woff2');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Golos';
+    src: url(./Golos-UI/Golos-UI_Medium.ttf) format('truetype');
+    src: url(./Golos-UI/Golos-UI_Medium.woff) format('woff');
+    src: url(./Golos-UI/Golos-UI_Medium.woff2) format('woff2');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Golos';
+    src: url(./Golos-UI/Golos-UI_Regular.ttf) format('truetype');
+    src: url(./Golos-UI/Golos-UI_Regular.woff) format('woff');
+    src: url(./Golos-UI/Golos-UI_Regular.woff2) format('woff2');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Golos';
+    src: url(./Golos-UI/Golos-UI_VF.ttf) format('truetype');
+    src: url(./Golos-UI/Golos-UI_VF.woff) format('woff');
+    src: url(./Golos-UI/Golos-UI_VF.woff2) format('woff2');    
+}

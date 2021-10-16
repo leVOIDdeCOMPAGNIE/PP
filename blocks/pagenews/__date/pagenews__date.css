@@ -1,0 +1,15 @@
+.pagenews__date{
+    display: block;
+    margin: 0 auto 72px auto;
+    width: 120px;
+    text-align: center;
+    padding: 0px 20px;
+    padding-top: 7px;
+    border-top: 2px solid #808080;    
+    font-family: Golos, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 19px;
+    color: #666666;
+}

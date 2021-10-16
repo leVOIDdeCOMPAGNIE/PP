@@ -1,0 +1,36 @@
+.navigation-card__menu_link {
+    font-family: Golos, sans-serif;
+    position: relative;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10.0712px;
+    line-height: 12px;
+    color: #2B2A29;
+    margin: 0;
+    padding: 0;
+    border: none;
+    margin-right: 20px;
+    background-color: transparent;
+}
+
+.navigation-card__menu_link:hover {
+    color: #6B6B6B;
+}
+
+.navigation-card__menu_link:focus {
+    border: 1px solid #2B2A29;
+    border-radius: 60px;
+    color: #2B2A29;
+    padding: 3px;
+}
+
+.navigation-card__menu_link:active {
+    border: 1px solid #6B6B6B;
+    border-radius: 60px;
+    color: #6B6B6B;
+    padding: 3px;
+}
+
+.navigation-card__menu_link:last-child {
+    margin-right: 0px;
+}

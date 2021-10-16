@@ -1,0 +1,11 @@
+.map__popup-content {
+  color: #5b5b5b;
+  font-size: 10px;
+  line-height: 10px;
+}
+
+@media (max-width: 959px) {
+  .map__popup-content {
+    font-size: 8px;
+  }
+}

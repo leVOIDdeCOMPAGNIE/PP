@@ -1,0 +1,10 @@
+.navigation-card__menu {
+    margin: auto;
+    margin-top: 26px;
+}
+
+@media screen and (max-width: 890px) {
+    .navigation-card__menu {
+        display: none;
+    }
+}

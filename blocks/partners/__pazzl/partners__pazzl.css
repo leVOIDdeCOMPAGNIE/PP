@@ -1,0 +1,28 @@
+.partners__pazzl {
+  width: 70.16px;
+  height: 83.63px;
+  position: absolute;
+  bottom: 300px;
+  right: 134px;
+}
+
+@media screen and (max-width: 640px) {
+  .partners__pazzl {
+    bottom: 228px;
+    right: 84px;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .partners__pazzl {   
+    left: 82px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .partners__pazzl {
+    width: 31px;
+    height: 36px;
+    bottom: 171px;    
+  }
+}

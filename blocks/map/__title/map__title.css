@@ -1,0 +1,21 @@
+.map__title {
+  font-weight: normal;
+  font-size: 43px;
+  margin: 38px 0 13px 107px;
+  text-transform: uppercase;
+  color: #00926f;
+}
+
+@media (max-width: 959px) {
+  .map__title {
+    font-size: 34px;
+    margin: 51px 0 10px 40px;
+  }
+}
+
+@media (max-width: 639px) {
+  .map__title {
+    font-size: 24px;
+    margin: 34px 0 9px 25px;
+  }
+}

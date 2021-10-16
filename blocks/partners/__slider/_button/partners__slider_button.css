@@ -1,0 +1,12 @@
+.partners__slider_button {
+  border: none;
+  width: 11.41px;
+  height: 22.16px;
+  background-color: transparent;
+  background-size: cover;
+  align-self: center;
+}
+
+.partners__slider_button:hover {
+  cursor: pointer;
+}

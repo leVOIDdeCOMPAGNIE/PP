@@ -1,0 +1,10 @@
+.news__grid{
+    width: 835px;
+    height: 200px;
+    background-color: #6D097A;
+    margin: 0 auto;
+    padding: 30px 35px 50px 35px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 0px 15px;
+}

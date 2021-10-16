@@ -1,0 +1,8 @@
+.about__text-subject{
+    font-family: Golos, sans-serif;
+    font-style: italic;
+    font-weight: 600;
+    font-size: 7px;
+    line-height: 8px;
+    color: hsl(293, 86%, 26%);
+}

@@ -1,0 +1,22 @@
+.foundation__pazzl {
+  width: 234.51px;
+  height: 267.76px;
+  position: absolute;
+  top: -35px;
+  left: 0;
+}
+
+@media screen and (max-width: 800px) {
+  .foundation__pazzl {
+    width: 150px;
+    top: -50px;
+    left: -35px;       
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .foundation__pazzl {
+    width: 140px;
+    top: -70px;
+  }
+}

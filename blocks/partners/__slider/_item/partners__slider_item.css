@@ -1,0 +1,21 @@
+.partners__slider_item {
+  list-style-type: none;
+  flex-shrink: 0;
+  margin-right: 31px;
+}
+
+.partners__slider_item:last-child {
+  margin-left: 0;
+}
+
+@media screen and (max-width: 640px) {
+  .partners__slider_item {
+    margin-right: 25px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .partners__slider_item {
+    margin-right: 10px;
+  }
+}

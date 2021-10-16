@@ -1,0 +1,10 @@
+.partners__slider_button_right {
+  background-image: url(../../../../images/partners/partners-slider-right.svg);
+  margin-right: 28px;
+}
+
+@media screen and (max-width: 320px) {
+  .partners__slider_button_right {    
+    margin-left: 10px;
+  }
+}
