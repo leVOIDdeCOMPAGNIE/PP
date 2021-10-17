@@ -101,5 +101,6 @@
 @import url(../blocks/footer/__title/footer__title.css);
 @import url(../blocks/footer/__contact/footer__contact.css);
 @import url(../blocks/footer/__social-icon/footer__social-icon.css);
-@import url(../blocks/footer/__img-up/footer__img-up.css);
 @import url(../blocks/footer/__copyright/footer__copyright.css);
+
+@import url(../blocks/img-up/img-up.css);

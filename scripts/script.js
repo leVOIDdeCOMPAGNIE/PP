@@ -1,12 +1,5 @@
 
-const buttonPageUp = document.querySelector('.footer__column_content_up');
-
-buttonPageUp.onmouseover = function (event) {
-  event.target.style.fill = '#B5B5B5';
-};
-buttonPageUp.onmouseout = function (event) {
-  event.target.style.fill = '#FEFEFE';
-};
+const buttonPageUp = document.querySelector('.img-up');
 
 buttonPageUp.addEventListener('click', () => {
   window.scrollTo({
@@ -53,4 +46,3 @@ pinTwo.addEventListener('click', () => {
 // pin.onmouseout = function () {
 //   region.setAttribute('fill', '#9A34A8');
 // };
-
