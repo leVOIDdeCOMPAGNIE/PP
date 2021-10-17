@@ -1,0 +1,7 @@
+.projects__slider_card {
+  width: 147px;
+  height: 113px;  
+  display: flex; 
+  overflow: hidden;
+  position: relative;
+}

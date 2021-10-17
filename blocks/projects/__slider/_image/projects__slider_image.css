@@ -1,0 +1,14 @@
+.projects__slider_image {
+  position: absolute;
+  width: 147px;
+  height: 113px; 
+  object-fit: cover;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  transition: all .5s ease-in-out;
+}
+
+.projects__slider_image:hover {
+  transform: scale(1.3);
+}

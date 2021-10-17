@@ -1,0 +1,16 @@
+.projects__slider_button_left {
+  background-image: url(../../../../images/projects/slider-btn-left.svg);   
+  right: 70px;
+}
+
+@media screen and (max-width: 900px) {
+  .projects__slider_button_left {    
+    right: 35px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .projects__slider_button_left {    
+    right: 25px;
+  }
+}

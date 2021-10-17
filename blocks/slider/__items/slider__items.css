@@ -1,0 +1,7 @@
+.slider__items {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+}

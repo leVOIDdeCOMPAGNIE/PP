@@ -1,0 +1,10 @@
+.slider__button {
+  border: none;
+  background-color: transparent;
+  background-size: cover;
+  align-self: center;
+}
+
+.slider__button:hover {
+  cursor: pointer;
+}
