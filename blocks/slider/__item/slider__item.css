@@ -1,0 +1,8 @@
+.slider__item {
+  list-style-type: none;
+  flex-shrink: 0;
+}
+
+.slider__item:last-child {
+  margin-left: 0;
+}

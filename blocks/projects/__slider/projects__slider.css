@@ -1,0 +1,16 @@
+.projects__slider {
+  margin: 0;    
+  padding-bottom: 62px;
+}
+
+@media screen and (max-width: 640px) {
+  .projects__slider {    
+    padding-bottom: 41px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .projects__slider {    
+    padding-bottom: 24px;
+  }
+}

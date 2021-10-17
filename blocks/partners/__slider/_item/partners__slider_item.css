@@ -1,11 +1,5 @@
-.partners__slider_item {
-  list-style-type: none;
-  flex-shrink: 0;
+.partners__slider_item {  
   margin-right: 31px;
-}
-
-.partners__slider_item:last-child {
-  margin-left: 0;
 }
 
 @media screen and (max-width: 640px) {

@@ -1,0 +1,8 @@
+.projects__pazzl_position_right {
+  width: 150px;
+  height: 300px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -5;
+}

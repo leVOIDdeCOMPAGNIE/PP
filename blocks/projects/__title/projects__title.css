@@ -1,0 +1,26 @@
+.projects__title {
+  font-family: Golos, sans-serif;
+  font-weight: normal;
+  font-size: 43px;
+  line-height: 50px;
+  color: #00926F;
+  text-transform: uppercase;
+  margin: 104px 109px 14.3px 0;
+  text-align: right;
+}
+
+@media screen and (max-width: 640px) {
+  .projects__title {
+    font-size: 34px;
+    line-height: 40px;
+    margin: 148px 46px 11.5px 0;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .projects__title {
+    font-size: 23px;
+    line-height: 27px;
+    margin: 71.8px 33.3px 8.2px 0;
+  }
+}

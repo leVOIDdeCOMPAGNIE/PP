@@ -1,0 +1,18 @@
+.projects__slider_title {
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+  text-align: center;
+  width: 100%;
+  margin: 0;
+  margin-top: auto;
+  height: 40px;  
+  font-family: Golos, sans-serif;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 12px;
+  color: #FEFEFE;
+  text-transform: uppercase;
+  background-color: rgba(181, 181, 181, .8);
+  z-index: 2;
+}

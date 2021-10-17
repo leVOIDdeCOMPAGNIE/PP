@@ -1,0 +1,29 @@
+.projects__subtitle {
+  margin: 0;
+  font-family: Golos, sans-serif;
+  font-weight: normal;
+  color: #5B5B5B;
+  font-size: 14.6px;
+  line-height: 17px;
+  margin-right: 109px;
+  margin-bottom: 71px;
+  text-align: right;
+}
+
+@media screen and (max-width: 640px) {
+  .projects__subtitle {
+    font-size: 12px;
+    line-height: 14px;
+    margin-right: 46px;
+    margin-bottom: 77px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .projects__subtitle {
+    font-size: 11px;
+    line-height: 12px;
+    margin-right: 33.3px;
+    margin-bottom: 56px;
+  }
+}

@@ -1,0 +1,6 @@
+.projects__slider_button {  
+  width: 13px;
+  height: 26px;  
+  position: absolute;
+  z-index: 5;
+}
