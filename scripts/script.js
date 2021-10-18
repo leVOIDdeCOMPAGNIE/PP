@@ -46,3 +46,36 @@ pinTwo.addEventListener('click', () => {
 // pin.onmouseout = function () {
 //   region.setAttribute('fill', '#9A34A8');
 // };
+
+const animatedItems = document.querySelectorAll('.animated');
+if (animatedItems.length > 0) {
+  window.addEventListener('scroll', animOnScroll);
+  function animOnScroll() {
+    for (let index = 0; index < animatedItems.length; index++) {
+      const animatedItem = animatedItems[index];
+      const animatedItemHeight = animatedItem.offsetHeight;
+      const animatedItemOffset = offset(animatedItem).top;
+      const animStart = 2;
+
+      let animItemPoint = window.innerHeight - animatedItemHeight / animStart;
+      if(animatedItemHeight > window.innerHeight) {
+        animItemPoint = window.innerHeight - window.innerHeight / animStart;
+      }
+
+      if ((pageYOffset > animatedItemOffset - animItemPoint) && pageYOffset < (animatedItemOffset + animatedItemHeight)) {
+        animatedItem.classList.add('animated');
+      } else {
+        animatedItem.classList.remove('animated');
+      }
+    }
+  }
+  function offset(el) {
+    const rect = el.getBoundingClientRect(),
+      scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
+      scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    return {top: rect.top + scrollTop, left: rect.left + scrollLeft}
+  }
+  animOnScroll();
+}
+
+
