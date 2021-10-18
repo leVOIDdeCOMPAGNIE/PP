@@ -1,4 +1,5 @@
 .map__svg-container {
-  width: 691px;
-
+  /* width: 691px; */
+  width: 100%;
+  grid-area: map;
 }

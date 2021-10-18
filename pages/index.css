@@ -71,6 +71,10 @@
 @import url(../blocks/map/__popup/map__popup.css);
 @import url(../blocks/map/__popup/_opened/map__popup_opened.css);
 @import url(../blocks/map/__popup-content/map__popup-content.css);
+@import url(../blocks/map/__address-container/map__adress-container.css);
+@import url(../blocks/map/__centers-address/map__centers-address.css);
+@import url(../blocks/map/__address/map__address.css);
+
 @import url(../blocks/foundation/foundation.css);
 @import url(../blocks/foundation/__content/foundation__content.css);
 @import url(../blocks/foundation/__title/foundation__title.css);
