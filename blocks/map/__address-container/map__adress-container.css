@@ -1,0 +1,13 @@
+.map__address-container {
+  width: 100%;
+  grid-area: address;
+  visibility: hidden;
+  height: 0;
+}
+
+@media (max-width: 639px) {
+  .map__address-container {
+    visibility: visible;
+    height: 100%;
+  }
+}

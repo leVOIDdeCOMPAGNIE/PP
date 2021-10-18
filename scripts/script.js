@@ -21,10 +21,16 @@ const pinTwo = document.getElementById('pin-2');
 
 const adressPopup = document.querySelector('.map__popup');
 
-/*функция открыттия попапа*/
+/*функция открыттия/закрытия попапа*/
 function openPopup(popup) {
   popup.classList.toggle('map__popup_opened');
+  window.addEventListener('resize', () => {
+    if (document.documentElement.clientWidth < 640) {
+      popup.classList.remove('map__popup_opened');
+    }
+  });
 }
+
 
 /*открытие попапа с адресом*/
 pinOne.addEventListener('click', () => {
@@ -33,6 +39,11 @@ pinOne.addEventListener('click', () => {
 pinTwo.addEventListener('click', () => {
   openPopup(adressPopup);
 });
+
+
+
+/*изменение контента блока map для тачей*/
+
 
 /*смена цвета региона*/
 // region.onmouseover = function (event) {

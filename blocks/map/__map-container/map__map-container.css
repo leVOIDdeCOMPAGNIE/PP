@@ -1,5 +1,24 @@
 .map__map-container {
-  margin: 11px 0 26px 0;
-  display: flex;
-  justify-content: center;
+  margin: 28px 0 83px 0;
+  padding: 0 80px;
+  display: grid;
+  grid-template-areas:
+    'map address';
+  column-gap: 0;
+  grid-template-columns: 1fr 0;
+}
+
+@media (max-width: 959px) {
+  .map__map-container {
+    margin: 21px 45px 51px 45px;
+    padding: 0;
+  }
+}
+
+@media (max-width: 639px) {
+  .map__map-container {
+    margin: 11px 16px 26px 40px;
+    grid-template-columns: 0 1fr;
+  }
+
 }

@@ -10,7 +10,16 @@
   box-sizing: border-box;
   padding: 0 15px;
   position: absolute;
-  left: 205px;
-  bottom: 240px;
+  left: 19%;
+  bottom: 48%;
   visibility: hidden;
+}
+
+@media (max-width: 959px) {
+  .map__popup {
+    width: 105px;
+    height: 62px;
+    left: 20%;
+    bottom: 51%;
+  }
 }
