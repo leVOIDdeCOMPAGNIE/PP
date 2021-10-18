@@ -1,0 +1,10 @@
+.img-up {  
+  margin: auto;
+  cursor: pointer; 
+  width: 36px;
+  height: 36px;
+  fill: #6D097A;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+}

@@ -4,6 +4,21 @@
   position: absolute;
   bottom: 300px;
   left: 180px;
+  transition: all 2s ease-in-out;
+  transform: translate(0px, 120%);
+  opacity: 0;
+  animation: rotation 10s ease 0s infinite normal;
+}
+
+.projects__pazzl_position_top:hover {
+  animation-play-state: paused;
+  cursor: pointer; 
+}
+
+@keyframes rotation {
+  0%   { transform: rotate(0deg); }
+  50%  { transform: rotate(180deg); }
+ 100%  { transform: rotate(360deg); }
 }
 
 @media screen and (max-width: 560px) {
