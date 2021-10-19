@@ -1,16 +1,17 @@
 .projects__slider_button_left {
   background-image: url(../../../../images/projects/slider-btn-left.svg);   
-  right: 70px;
+  margin-left: 76px;
+  margin-right: 10px;
 }
 
 @media screen and (max-width: 900px) {
   .projects__slider_button_left {    
-    right: 35px;
+    margin-left: 35px;
   }
 }
 
 @media screen and (max-width: 600px) {
   .projects__slider_button_left {    
-    right: 25px;
+    margin-left: 25px;
   }
 }
