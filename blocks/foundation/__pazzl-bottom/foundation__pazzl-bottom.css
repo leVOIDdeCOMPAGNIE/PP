@@ -1,6 +1,6 @@
 .foundation__pazzl-bottom {
-  width: 248.12px;
-  height: 125.17px;
+  width: 248px;
+  height: 125px;
   position: absolute;
   right: 37%;
   bottom: -96px;
@@ -8,7 +8,7 @@
 
 @media screen and (max-width: 640px) {
   .foundation__pazzl-bottom {
-    width: 216.12px;
+    width: 216px;
     width: 220px;
     right: 33%;
     bottom: -80px;

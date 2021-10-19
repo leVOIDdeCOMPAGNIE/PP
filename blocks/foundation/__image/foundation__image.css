@@ -1,7 +1,7 @@
 .foundation__image {
-  width: 190.32px;
-  height: 234.27px;
-  margin-top: -2px;
+  box-sizing: border-box;
+  width: 190px;
+  height: 234px;
   margin-right: 85px;
 }
 
@@ -15,11 +15,10 @@
 
 @media screen and (max-width: 540px) {
   .foundation__image {
-    width: 93px;
-    height: 150px;
+    width: 95px;
+    height: 140px;
     margin-right: 0;
-    margin-left: 21px;
-    margin-bottom: -7px;
+    margin-left: 21px;    
     align-self: flex-end;
   }
 }

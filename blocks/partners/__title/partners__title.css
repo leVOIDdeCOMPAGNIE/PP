@@ -5,14 +5,14 @@
   line-height: 50px;
   color: #6D097A;
   text-transform: uppercase;
-  margin: 141px 0 6.3px 106px;
+  margin: 141px 0 6px 106px;
 }
 
 @media screen and (max-width: 640px) {
   .partners__title {
     font-size: 34px;
     line-height: 40px;
-    margin: 105px 0 5.3px 40px;
+    margin: 105px 0 5px 40px;
   }
 }
 
@@ -20,6 +20,6 @@
   .partners__title {
     font-size: 23px;
     line-height: 27px;
-    margin: 80px 0 8.8px 18px;
+    margin: 80px 0 9px 18px;
   }
 }

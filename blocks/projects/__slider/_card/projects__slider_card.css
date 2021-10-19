@@ -1,7 +1,21 @@
 .projects__slider_card {
-  width: 147px;
+  width: 146px;
   height: 113px;  
   display: flex; 
   overflow: hidden;
-  position: relative;
+  position: relative; 
+}
+
+@media screen and (max-width: 640px) {
+  .projects__slider_card {
+    width: 134px;
+    height: 103px; 
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .projects__slider_card {
+    width: 96px;
+    height: 73px; 
+  }
 }
