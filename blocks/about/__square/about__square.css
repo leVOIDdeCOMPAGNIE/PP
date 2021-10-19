@@ -1,5 +1,14 @@
 .about__square{
-    width: 298px;
-    height: 91px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1;
+    top: 92px;
+    right: 0;
+    width: 382px;
+    height: 115px;
     background-color: hsl(165, 36%, 85%);
+    margin-right: 116px;
+    
 }

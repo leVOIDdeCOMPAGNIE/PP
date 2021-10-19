@@ -11,9 +11,11 @@
 @import url(../blocks/intro/__puzzles/intro__puzzles.css);
 @import url(../blocks/intro/__puzzle-green/intro__puzzle-green.css);
 @import url(../blocks/intro/__pazzle-purple/intro__pazzle-purple.css);
-@import url(../blocks/intro/__button-holder/intro__button-holder.css);
-@import url(../blocks/intro/__button-decor/intro__button-decor.css);
-@import url(../blocks/intro/__button/intro__button.css);
+
+@import url(../blocks/test-button/__button-holder/test-button__button-holder.css);
+@import url(../blocks/test-button/__button/test-button__button.css);
+@import url(../blocks/test-button/__button-decor/test-button__button-decor.css);
+
 @import url(../blocks/intro/__picture/intro__picture.css);
 @import url(../blocks/intro/__link-holder/intro__link-holder.css);
 @import url(../blocks/intro/__description/intro__description.css);
@@ -25,12 +27,21 @@
 
 @import url(../blocks/about/about.css);
 @import url(../blocks/about/__description-holder/about__description-holder.css);
+@import url(../blocks/about/__description/about__description.css);
 @import url(../blocks/about/__title/about__title.css);
 @import url(../blocks/about/__subtitle/about__subtitle.css);
+@import url(../blocks/about/__puzzles/about__puzzles.css);
+@import url(../blocks/about/__test-title/about__test-title.css);
+@import url(../blocks/about/__test-subtitle/about__test-subtitle.css);
+@import url(../blocks/about/__side/about__side.css);
 @import url(../blocks/about/__text-holder/about__text-holder.css);
 @import url(../blocks/about/__square/about__square.css);
 @import url(../blocks/about/__text-subject/about__text-subject.css);
 @import url(../blocks/about/__text/about__text.css);
+@import url(../blocks/about/__info-sign/about__info-sign.css);
+@import url(../blocks/about/__square-arc/about__square-arc.css);
+@import url(../blocks/about/__text-pazzle/about__text-pazzle.css);
+@import url(../blocks/about/__photo/about__photo.css);
 
 @import url(../blocks/news/news.css);
 @import url(../blocks/news/__title/news__title.css);

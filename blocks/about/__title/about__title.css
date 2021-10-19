@@ -1,9 +1,11 @@
 .about__title{
-    margin: 0;
+    margin: 84px 0 26px 102px;
     font-family: Golos, sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 43x;
+    font-size: 43px;
     line-height: 50px;
     color: hsl(293, 86%, 26%);
+    width: 281px;
+    height: 50px;
 }

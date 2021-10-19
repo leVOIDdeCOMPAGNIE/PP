@@ -1,5 +1,8 @@
 .about__text-holder{
-    width: 50%;
-    height: 490px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 428px;
+    width: 480px;
     background-color: hsl(293, 86%, 26%);
 }
