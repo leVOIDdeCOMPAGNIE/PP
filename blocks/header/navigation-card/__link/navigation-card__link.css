@@ -1,4 +1,4 @@
-.navigation-card__menu_link {
+.navigation-card__link {
     font-family: Golos, sans-serif;
     position: relative;
     font-style: normal;
@@ -13,24 +13,25 @@
     background-color: transparent;
 }
 
-.navigation-card__menu_link:hover {
+.navigation-card__link:hover {
     color: #6B6B6B;
+    cursor: url("../../../../images/cursor.svg"), url("../../../../images/cursor.cur"), pointer;
 }
 
-.navigation-card__menu_link:focus {
+.navigation-card__link:visited {
     border: 1px solid #2B2A29;
     border-radius: 60px;
     color: #2B2A29;
     padding: 3px;
 }
 
-.navigation-card__menu_link:active {
+.navigation-card__link:active {
     border: 1px solid #6B6B6B;
     border-radius: 60px;
     color: #6B6B6B;
     padding: 3px;
 }
 
-.navigation-card__menu_link:last-child {
+.navigation-card__link:last-child {
     margin-right: 0px;
 }

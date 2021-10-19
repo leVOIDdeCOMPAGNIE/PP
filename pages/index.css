@@ -11,11 +11,9 @@
 @import url(../blocks/intro/__puzzles/intro__puzzles.css);
 @import url(../blocks/intro/__puzzle-green/intro__puzzle-green.css);
 @import url(../blocks/intro/__pazzle-purple/intro__pazzle-purple.css);
-
 @import url(../blocks/test-button/__button-holder/test-button__button-holder.css);
 @import url(../blocks/test-button/__button/test-button__button.css);
 @import url(../blocks/test-button/__button-decor/test-button__button-decor.css);
-
 @import url(../blocks/intro/__picture/intro__picture.css);
 @import url(../blocks/intro/__link-holder/intro__link-holder.css);
 @import url(../blocks/intro/__description/intro__description.css);
@@ -24,7 +22,6 @@
 @import url(../blocks/intro/__handlers-holder/intro__handlers-holder.css);
 @import url(../blocks/intro/__slider-handler/intro__slider-handler.css);
 @import url(../blocks/intro/__photo/intro__photo.css);
-
 @import url(../blocks/about/about.css);
 @import url(../blocks/about/__description-holder/about__description-holder.css);
 @import url(../blocks/about/__description/about__description.css);
@@ -42,7 +39,6 @@
 @import url(../blocks/about/__square-arc/about__square-arc.css);
 @import url(../blocks/about/__text-pazzle/about__text-pazzle.css);
 @import url(../blocks/about/__photo/about__photo.css);
-
 @import url(../blocks/news/news.css);
 @import url(../blocks/news/__title/news__title.css);
 @import url(../blocks/news/__link/news__link.css);
@@ -53,20 +49,17 @@
 @import url(../blocks/newCard/__content/newCard__content.css);
 @import url(../blocks/newCard/__link/newCard__link.css);
 @import url(../blocks/projects/projects.css);
-
 @import url(../blocks/header/navigation-card/navigation-card.css);
 @import url(../blocks/header/navigation-card/__menu/navigation-card__menu.css);
-@import url(../blocks/header/navigation-card/__menu/_link/navigation-card__menu_link.css);
-@import url(../blocks/header/navigation-card/__menu/_button/navigation-card__menu_button.css);
+@import url(../blocks/header/navigation-card/__link/navigation-card__link.css);
+@import url(../blocks/header/navigation-card/__button/navigation-card__button.css);
 @import url(../blocks/header/logo-card/logo-card.css);
 @import url(../blocks/header/logo/logo.css);
 @import url(../blocks/header/logo-card/__pazzle/logo-card__pazzle.css);
-
 @import url(../blocks/slider/slider.css);
 @import url(../blocks/slider/__button/slider__button.css);
 @import url(../blocks/slider/__item/slider__item.css);
 @import url(../blocks/slider/__items/slider__items.css);
-
 @import url(../blocks/projects/projects.css);
 @import url(../blocks/projects/__title/projects__title.css);
 @import url(../blocks/projects/__subtitle/projects__subtitle.css);
@@ -80,7 +73,6 @@
 @import url(../blocks/projects/__slider/_button/projects__slider_button.css);
 @import url(../blocks/projects/__slider/_button_left/projects__slider_button_left.css);
 @import url(../blocks/projects/__slider/_button_right/projects__slider_button_right.css);
-
 @import url(../blocks/map/map.css);
 @import url(../blocks/map/__title/map__title.css);
 @import url(../blocks/map/__subtitle/map__subtitle.css);
@@ -93,7 +85,6 @@
 @import url(../blocks/map/__address-container/map__adress-container.css);
 @import url(../blocks/map/__centers-address/map__centers-address.css);
 @import url(../blocks/map/__address/map__address.css);
-
 @import url(../blocks/foundation/foundation.css);
 @import url(../blocks/foundation/__content/foundation__content.css);
 @import url(../blocks/foundation/__title/foundation__title.css);
@@ -113,7 +104,6 @@
 @import url(../blocks/partners/__slider/_button_left/partners__slider_button_left.css);
 @import url(../blocks/partners/__slider/_button_right/partners__slider_button_right.css);
 @import url(../blocks/footer/footer.css);
-
 @import url(../blocks/footer/__columns/footer__columns.css);
 @import url(../blocks/footer/__column/footer__column.css);
 @import url(../blocks/footer/__column/_content/footer__column_content_logo.css);
@@ -125,6 +115,5 @@
 @import url(../blocks/footer/__contact/footer__contact.css);
 @import url(../blocks/footer/__social-icon/footer__social-icon.css);
 @import url(../blocks/footer/__copyright/footer__copyright.css);
-
 @import url(../blocks/img-up/img-up.css);
 @import url(../blocks/animated/animated.css);
