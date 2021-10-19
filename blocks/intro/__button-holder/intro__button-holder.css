@@ -1,0 +1,7 @@
+.intro__button-holder{
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    margin: 0 0 52px 0;
+}

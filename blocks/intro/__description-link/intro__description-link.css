@@ -1,9 +1,11 @@
 .intro__description-link{
+    width: 41px;
     font-family: Golos, sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 6.8316px;
+    font-size: 7px;
     line-height: 8px;
     text-decoration-line: underline;
     color: hsl(0, 0%, 100%);
+    margin: 9px 0 0 37px;
 }

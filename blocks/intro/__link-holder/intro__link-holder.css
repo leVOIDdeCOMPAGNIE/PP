@@ -1,6 +1,8 @@
 .intro__link-holder{
-    position: relative;
+    display: flex;
+    z-index: 1;
     width: 345px;
     height: 82px;
     background-color: hsl(166, 100%, 29%);
+    margin: 142px 154px 0 0;
 }

@@ -1,8 +1,9 @@
 .intro{
     display: flex;
+    position: relative;
     box-sizing: border-box;
-    max-height: 308px;
-    border: 1px solid red;
+    min-height: 308px;
     background-color: inherit;
+    justify-content: space-between;
 
 }

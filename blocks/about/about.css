@@ -1,6 +1,8 @@
 .about{
     display: flex;
-    align-items: baseline;
+    position: relative;
+    z-index: 1;
+    
     justify-content: space-around;
     position: relative;
     height: 722px;
