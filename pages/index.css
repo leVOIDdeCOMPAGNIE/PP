@@ -8,11 +8,19 @@
 @import url(../blocks/intro/__links/intro__links.css);
 @import url(../blocks/intro/__item/intro__item.css);
 @import url(../blocks/intro/__item-link/intro__item-link.css);
+@import url(../blocks/intro/__puzzles/intro__puzzles.css);
+@import url(../blocks/intro/__puzzle-green/intro__puzzle-green.css);
+@import url(../blocks/intro/__pazzle-purple/intro__pazzle-purple.css);
+@import url(../blocks/intro/__button-holder/intro__button-holder.css);
+@import url(../blocks/intro/__button-decor/intro__button-decor.css);
 @import url(../blocks/intro/__button/intro__button.css);
 @import url(../blocks/intro/__picture/intro__picture.css);
 @import url(../blocks/intro/__link-holder/intro__link-holder.css);
 @import url(../blocks/intro/__description/intro__description.css);
+@import url(../blocks/intro/__description-arc/intro__description-arc.css);
 @import url(../blocks/intro/__description-link/intro__description-link.css);
+@import url(../blocks/intro/__handlers-holder/intro__handlers-holder.css);
+@import url(../blocks/intro/__slider-handler/intro__slider-handler.css);
 @import url(../blocks/intro/__photo/intro__photo.css);
 
 @import url(../blocks/about/about.css);
