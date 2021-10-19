@@ -1,13 +1,9 @@
 .about{
-    display: flex;
-    position: relative;
-    z-index: 1;
-    
+    display: grid;
+    grid-template-columns: 50% 50%;
     justify-content: space-around;
     position: relative;
     height: 722px;
     background-color: inherit;
     box-sizing: border-box;
-    border: 1px solid red;
-
 }
