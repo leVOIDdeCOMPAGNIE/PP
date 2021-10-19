@@ -1,0 +1,8 @@
+.intro__handlers-holder{
+    display: flex;
+    position: relative;
+    bottom: -42px;
+    right: -241px;
+    height: fit-content;
+    width: fit-content;
+}

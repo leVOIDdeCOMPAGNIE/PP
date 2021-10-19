@@ -1,5 +1,8 @@
 .intro__picture{
-    position: relative;
-    width: 288px;
-    height: 324px;
+    position: absolute;
+    width: fit-content;
+    height: fit-content;
+    z-index: 1;
+    left: 162px;
+    bottom: 0;
 }

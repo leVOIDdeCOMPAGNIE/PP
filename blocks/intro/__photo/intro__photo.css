@@ -1,5 +1,7 @@
 .intro__photo{
-    position:relative;
-    z-index: 0;
+    position: absolute;
+    right: 0;
+    bottom: -134px;
+    z-index: -1;
     overflow: hidden;
 }
