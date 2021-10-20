@@ -13,18 +13,27 @@
 <body class="page page__section">
     <header class="header">
         <div class="logo-card">
-            <img class="logo" src="./images/logo.svg" alt="logo">
-            <img class="logo-card__pazzle" src="./images/logo_pazzle.svg" alt="logo_pzl">
+            <img class="logo" src="./images/header/logo.svg" alt="Лого">
+            <img class="logo-card__pazzle animated" src="./images/header/logo_pazzle.svg" alt="Картинка пазла">
         </div>
         <div class="navigation-card">
-            <button class="navigation-card__menu_button"></button>
+            <button class="navigation-card__button" type="button"></button>
+            <nav class="navigation-card__burger">
+                <button class="navigation-card__close-button" type="button"></button>
+                <a href="./index.html#about" class="navigation-card__link_burger">О ДЕМЕНЦИИ</a>
+                <a href="./index.html#projects" class="navigation-card__link_burger">ПРОЕКТЫ</a>
+                <a href="./index.html#partners" class="navigation-card__link_burger">ПАРТНЕРЫ</a>
+                <a href="./news.html" class="navigation-card__link_burger">НОВОСТИ</a>
+                <a href="./index.html#foundation" class="navigation-card__link_burger">О ФОНДЕ</a>
+                <a href="./index.html#footer" class="navigation-card__link_burger">КОНТАКТЫ</a>
+            </nav>
             <nav class="navigation-card__menu">
-                <button class="navigation-card__menu_link">О ДЕМЕНЦИИ</button>
-                <button class="navigation-card__menu_link">ПРОЕКТЫ</button>
-                <button class="navigation-card__menu_link">ПАРТНЕРЫ</button>
-                <button class="navigation-card__menu_link">НОВОСТИ</button>
-                <button class="navigation-card__menu_link">О ФОНДЕ</button>
-                <button class="navigation-card__menu_link">КОНТАКТЫ</button>
+                <a href="./index.html#about" class="navigation-card__link">О ДЕМЕНЦИИ</a>
+                <a href="./index.html#projects" class="navigation-card__link">ПРОЕКТЫ</a>
+                <a href="./index.html#partners" class="navigation-card__link">ПАРТНЕРЫ</a>
+                <a href="./news.html" class="navigation-card__link navigation-card__link_active">НОВОСТИ</a>
+                <a href="./index.html#foundation" class="navigation-card__link">О ФОНДЕ</a>
+                <a href="./index.html#footer" class="navigation-card__link">КОНТАКТЫ</a>
             </nav>
         </div>
     </header>
@@ -33,16 +42,16 @@
         <p class="pagenews__date">25.09.2021</p>
         <img src="./images/newImage1.jpg" alt="news1" class="pagenews__image">
         <p class="pagenews__lead">Проблемы с памятью и растущая рассеянность названы одними из ранних признаков развивающейся деменции. Об этом сообщил британский портал Express.</p>
-        <p class="pagenews__content">По данным медиков, на ранней стадии деменции у человека меняются поведение и мироощущение. К примеру, дружелюбный человек может резко стать печальным и нервным. С течением времени симптомы проявляются ярче и деменция прогрессирует. Другими признаками ранней деменции врачи назвали снижение концентрации, изменение личности, апатию или депрессию, потерю способности выполнять повседневные задачи.
-
-            Как сообщалось 14 сентября, японские ученые из Окинавского института науки и технологи выявили метаболиты крови, изменение в содержании которых ассоциируется с развитием слабоумия. При этом некоторые метаболиты, значение которых увеличивалось, оказывают токсичное воздействие на центральную нервную систему.   
+        <p class="pagenews__content">По данным медиков, на ранней стадии деменции у человека меняются поведение и мироощущение. К примеру, дружелюбный человек может резко стать печальным и нервным. С течением времени симптомы проявляются ярче и деменция прогрессирует. Другими признаками
+            ранней деменции врачи назвали снижение концентрации, изменение личности, апатию или депрессию, потерю способности выполнять повседневные задачи. Как сообщалось 14 сентября, японские ученые из Окинавского института науки и технологи выявили
+            метаболиты крови, изменение в содержании которых ассоциируется с развитием слабоумия. При этом некоторые метаболиты, значение которых увеличивалось, оказывают токсичное воздействие на центральную нервную систему.
         </p>
         <a href="newsline.html" class="pagenews__link">Назад к ленте новостей</a>
     </main>
     <footer class="footer">
         <div class="footer__columns">
             <div class="footer__column footer__column_content_logo">
-                <img src="./images/footer/logo-footer.svg" alt="Лого деменция" class="footer__logo">                
+                <img src="./images/footer/logo-footer.svg" alt="Лого деменция" class="footer__logo">
             </div>
             <div class="footer__column">
                 <h3 class="footer__title">Контакты:</h3>
@@ -85,11 +94,12 @@
             <div class="footer__column footer__column_content_up">
                 <svg class="footer__img-up" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M35.412 17.7059L30.3633 22.7547C28.2632 20.6546 24.8549 20.6546 22.7548 22.7547C20.6547 24.8548 20.6547 28.263 22.7548 30.3632L17.706 35.4119L12.6573 30.3632C14.7574 28.2631 14.7574 24.8548 12.6573 22.7547C10.5572 20.6546 7.14894 20.6546 5.04884 22.7547L9.51474e-05 17.706L17.699 0.00707797L35.4049 17.713L35.412 17.7059Z"/>
-                </svg>               
+                </svg>
             </div>
         </div>
         <p class="footer__copyright">&copy; Copyright</p>
     </footer>
+    <script src="./scripts/newsScript.js"></script>
 </body>
 
 </html>

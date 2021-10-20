@@ -1,0 +1,13 @@
+.intro__slider_images{
+  position: absolute;
+  right: 0;
+  top: -155px;
+  z-index: -1;
+  overflow: hidden;
+
+  width: 729px;
+  height: 595px;
+
+  display: flex;
+  
+}

@@ -1,0 +1,6 @@
+.navigation-card__link_active {
+    border: 1px solid #2B2A29;
+    border-radius: 60px;
+    color: #2B2A29;
+    padding: 3px;
+}

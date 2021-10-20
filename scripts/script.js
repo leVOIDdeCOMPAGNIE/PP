@@ -1,11 +1,10 @@
-
 const buttonPageUp = document.querySelector('.img-up');
 
 buttonPageUp.addEventListener('click', () => {
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth"
-  });
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
 });
 
 const region = document.querySelector('.map__region');
@@ -16,21 +15,21 @@ const adressPopup = document.querySelector('.map__popup');
 
 /*функция открыттия/закрытия попапа*/
 function openPopup(popup) {
-  popup.classList.toggle('map__popup_opened');
-  window.addEventListener('resize', () => {
-    if (document.documentElement.clientWidth < 640) {
-      popup.classList.remove('map__popup_opened');
-    }
-  });
+    popup.classList.toggle('map__popup_opened');
+    window.addEventListener('resize', () => {
+        if (document.documentElement.clientWidth < 640) {
+            popup.classList.remove('map__popup_opened');
+        }
+    });
 }
 
 
 /*открытие попапа с адресом*/
 pinOne.addEventListener('click', () => {
-  openPopup(adressPopup);
+    openPopup(adressPopup);
 });
 pinTwo.addEventListener('click', () => {
-  openPopup(adressPopup);
+    openPopup(adressPopup);
 });
 
 
@@ -61,33 +60,35 @@ pinTwo.addEventListener('click', () => {
 /*Анимация паззлов при скролле, появление на странице*/
 const animatedItems = document.querySelectorAll('.animated');
 if (animatedItems.length > 0) {
-  window.addEventListener('scroll', animOnScroll);
-  function animOnScroll() {
-    for (let index = 0; index < animatedItems.length; index++) {
-      const animatedItem = animatedItems[index];
-      const animatedItemHeight = animatedItem.offsetHeight;
-      const animatedItemOffset = offset(animatedItem).top;
-      const animStart = 2;
+    window.addEventListener('scroll', animOnScroll);
 
-      let animItemPoint = window.innerHeight - animatedItemHeight / animStart;
-      if(animatedItemHeight > window.innerHeight) {
-        animItemPoint = window.innerHeight - window.innerHeight / animStart;
-      }
+    function animOnScroll() {
+        for (let index = 0; index < animatedItems.length; index++) {
+            const animatedItem = animatedItems[index];
+            const animatedItemHeight = animatedItem.offsetHeight;
+            const animatedItemOffset = offset(animatedItem).top;
+            const animStart = 2;
 
-      if ((pageYOffset > animatedItemOffset - animItemPoint) && pageYOffset < (animatedItemOffset + animatedItemHeight)) {
-        animatedItem.classList.add('animated');
-      } else {
-        animatedItem.classList.remove('animated');
-      }
+            let animItemPoint = window.innerHeight - animatedItemHeight / animStart;
+            if (animatedItemHeight > window.innerHeight) {
+                animItemPoint = window.innerHeight - window.innerHeight / animStart;
+            }
+
+            if ((pageYOffset > animatedItemOffset - animItemPoint) && pageYOffset < (animatedItemOffset + animatedItemHeight)) {
+                animatedItem.classList.add('animated');
+            } else {
+                animatedItem.classList.remove('animated');
+            }
+        }
     }
-  }
-  function offset(el) {
-    const rect = el.getBoundingClientRect(),
-      scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
-      scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-    return {top: rect.top + scrollTop, left: rect.left + scrollLeft}
-  }
-  animOnScroll();
+
+    function offset(el) {
+        const rect = el.getBoundingClientRect(),
+            scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
+            scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        return { top: rect.top + scrollTop, left: rect.left + scrollLeft }
+    }
+    animOnScroll();
 }
 
 // /*Слайдер*/
@@ -104,3 +105,105 @@ document.querySelector(".projects__slider_items"),
 document.querySelector(".projects__slider_button_left"),
 document.querySelector(".projects__slider_button_right"),
 document.querySelectorAll(".projects__handler"));
+
+const burgerButtom = document.querySelector(".navigation-card__button");
+const burgerMenu = document.querySelector(".navigation-card__burger");
+const closeButton = document.querySelector(".navigation-card__close-button");
+
+burgerButtom.addEventListener('click', function() {
+    burgerMenu.classList.toggle('navigation-card__burger_opened');
+    burgerButtom.classList.toggle('navigation-card__button_closed');
+})
+
+closeButton.addEventListener('click', function() {
+    burgerButtom.classList.toggle('navigation-card__button_closed');
+    burgerMenu.classList.toggle('navigation-card__burger_opened');
+})
+
+{
+    const sliders = document.querySelectorAll(".intro__slider");
+    // interval between switching images
+    // can't be less than your animation duration in css!
+    const interval = 2800;
+    // if you don't want to first animation last longer than other animations  
+    // set animDuration (in miliseconds) to your value of animation duration in css
+    const animDuration = 900;
+  
+    for (let i = 0; i < sliders.length; ++i) {
+      const slider = sliders[i];
+      const dots = slider.querySelector(".intro__slider_dots");
+      const sliderImgs = slider.querySelectorAll(".intro__slider_img");
+  
+      let currImg = 0;
+      let prevImg = sliderImgs.length - 1;
+      let intrvl;
+      let timeout;
+  
+      // Creates dots and add listeners to them
+      for (let i = 0; i < sliderImgs.length; ++i) {
+        const dot = document.createElement("div");
+        dot.classList.add("dot");
+        dots.appendChild(dot);
+        dot.addEventListener("click", dotClick.bind(null, i), false);
+      }
+  
+      const allDots = dots.querySelectorAll(".dot");
+      allDots[0].classList.add("active-dot");
+  
+      sliderImgs[0].style.left = "0";
+      timeout = setTimeout(() => {
+        animateSlider();
+        sliderImgs[0].style.left = "";
+        intrvl = setInterval(animateSlider, interval);
+      }, interval - animDuration);   
+  
+      /**
+       * Animates images
+       * @param {number} [nextImg] - index of next image to show
+       * @param {boolean} [right = false] - animate to right
+       */
+      function animateSlider(nextImg, right) {
+        if (!nextImg)
+          nextImg = currImg + 1 < sliderImgs.length ? currImg + 2 : 1;
+  
+        --nextImg;
+        sliderImgs[prevImg].style.animationName = "";
+  
+        if (!right) {
+          sliderImgs[nextImg].style.animationName = "leftNext";
+          sliderImgs[currImg].style.animationName = "leftCurr";
+        } 
+        else {
+          sliderImgs[nextImg].style.animationName = "rightNext";
+          sliderImgs[currImg].style.animationName = "rightCurr";
+        }
+  
+        prevImg = currImg;
+        currImg = nextImg;
+  
+        currDot = allDots[currImg];
+        currDot.classList.add("active-dot");
+        prevDot = allDots[prevImg];
+        prevDot.classList.remove("active-dot");
+      }
+  
+      /**
+       * Decides if animate to left or right and highlights clicked dot
+       * @param {number} num - index of clicked dot
+       */
+      function dotClick(num) {
+        if (num == currImg)
+          return false;
+  
+        clearTimeout(timeout);
+        clearInterval(intrvl);
+  
+        if (num > currImg)
+          animateSlider(num + 1);
+        else
+          animateSlider(num + 1, true);
+  
+        intrvl = setInterval(animateSlider, interval);
+      }
+    }
+  }
