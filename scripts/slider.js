@@ -12,7 +12,7 @@ function setSlider (sectionSlide, sectionSlides, sectionContainer, sectionArrowL
   
   const getMarginRightOfElement = () => {
     const slideMargin = window.getComputedStyle(slide).marginLeft;
-    const slideMarginWidth = parseInt(slideMargin.slice(0, -2));
+    const slideMarginWidth = parseInt(slideMargin.slice(0, -2))-1;
   
     return slideMarginWidth;
   } 

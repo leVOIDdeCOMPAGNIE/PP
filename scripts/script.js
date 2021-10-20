@@ -8,6 +8,10 @@ buttonPageUp.addEventListener('click', () => {
   });
 });
 
+if (window.screen.width > 960) {
+  buttonPageUp.style.right = 20 + ((window.screen.width - 960)/2)
+}
+
 const region = document.querySelector('.map__region');
 const pinOne = document.getElementById('pin-1');
 const pinTwo = document.getElementById('pin-2');

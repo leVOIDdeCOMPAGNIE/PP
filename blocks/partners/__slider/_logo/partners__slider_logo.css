@@ -1,22 +1,17 @@
 .partners__slider_logo {
   box-sizing: border-box;
-  /* height: auto;
-  width: 98px;
-  border-radius: 50%; */
   width: 100%;
   margin: auto;
 }
 
 @media screen and (max-width: 640px) {
   .partners__slider_logo {
-    height: 79px;
     width: 79px;
   }
 }
 
 @media screen and (max-width: 320px) {
   .partners__slider_logo {
-    height: 51px;
     width: 51px;
   }
 }
