@@ -19,13 +19,22 @@
         </div>
         <div class="navigation-card">
             <button class="navigation-card__button" type="button"></button>
+            <nav class="navigation-card__burger">
+                <button class="navigation-card__close-button" type="button"></button>
+                <a href="#about" class="navigation-card__link_burger">О ДЕМЕНЦИИ</a>
+                <a href="#projects" class="navigation-card__link_burger">ПРОЕКТЫ</a>
+                <a href="#partners" class="navigation-card__link_burger">ПАРТНЕРЫ</a>
+                <a href="./news.html" class="navigation-card__link_burger">НОВОСТИ</a>
+                <a href="#foundation" class="navigation-card__link_burger">О ФОНДЕ</a>
+                <a href="#footer" class="navigation-card__link_burger">КОНТАКТЫ</a>
+            </nav>
             <nav class="navigation-card__menu">
-                <a class="navigation-card__link">О ДЕМЕНЦИИ</a>
-                <a class="navigation-card__link">ПРОЕКТЫ</a>
-                <a class="navigation-card__link">ПАРТНЕРЫ</a>
-                <a class="navigation-card__link">НОВОСТИ</a>
-                <a class="navigation-card__link">О ФОНДЕ</a>
-                <a class="navigation-card__link">КОНТАКТЫ</a>
+                <a href="#about" class="navigation-card__link navigation-card__link_active">О ДЕМЕНЦИИ</a>
+                <a href="#projects" class="navigation-card__link">ПРОЕКТЫ</a>
+                <a href="#partners" class="navigation-card__link">ПАРТНЕРЫ</a>
+                <a href="./news.html" class="navigation-card__link">НОВОСТИ</a>
+                <a href="#foundation" class="navigation-card__link">О ФОНДЕ</a>
+                <a href="#footer" class="navigation-card__link">КОНТАКТЫ</a>
             </nav>
         </div>
     </header>
@@ -71,7 +80,7 @@
             </div>
             <img class="intro__photo" src="./images/intro/grandpa.png" alt="man looking in the future">
         </section>
-        <section class="about">
+        <section class="about" id="about">
             <div class="about__description-holder">
                 <div class="about__description">
                     <h2 class="about__title">О ДЕМЕНЦИИ</h2>
@@ -148,7 +157,7 @@
                 </article>
             </div>
         </section>
-        <section class="projects">
+        <section class="projects" id="projects">
             <img class="projects__pazzl_position_top animated" src="./images/projects/project_pazzl.svg" alt="Анимированный элемент">
             <img class="projects__pazzl_position_right" src="./images/projects/project_pazzl-002.svg" alt="Анимированный элемент">
             <h2 class="projects__title">А также:</h2>
@@ -649,7 +658,7 @@
                 <p class="map__popup-content">Республика Коми, г.&nbsp;Сыктывкар, ул.&nbsp;Карла Маркса, д.44</p>
             </div>
         </section>
-        <section class="foundation">
+        <section class="foundation" id="foundation">
             <img class="foundation__pazzl" src="./images/foundation/foundation-pazl.svg" alt="Анимированный элемент">
             <img class="foundation__pazzl-bottom" src="./images/foundation/foundation-pazl-002.svg" alt="Анимированный элемент">
             <div class="foundation__content">
@@ -661,7 +670,7 @@
             </div>
             <img class="foundation__image" src="./images/foundation/foundation-pamyat-960w.svg" alt="Логотип Память Поколений" srcset="./images/foundation/foundation-pamyat-640w.svg 640w, ./images/foundation/foundation-pamyat-320w.svg 320w" sizes="(max-width: 640px) 640px, (max-width: 540px) 320px">
         </section>
-        <section class="partners">
+        <section class="partners" id="partners">
             <img class="partners__pazzl animated" src="./images/partners/partners-pazl.svg" alt="Анимированный элемент">
             <h2 class="partners__title">Кто с нами?</h2>
             <p class="partners__subtitle">Партнеры</p>
@@ -681,7 +690,7 @@
             </div>
         </section>
     </main>
-    <footer class="footer">
+    <footer class="footer" id="footer">
         <div class="footer__columns">
             <div class="footer__column footer__column_content_logo">
                 <img src="./images/footer/logo-footer.svg" alt="Лого деменция" class="footer__logo">

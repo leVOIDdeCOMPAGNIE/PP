@@ -1,0 +1,15 @@
+.navigation-card__link_burger {
+    margin-bottom: 5px;
+    text-decoration: none;
+    font-family: Golos, sans-serif;
+    position: relative;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10.0712px;
+    line-height: 12px;
+    color: #2B2A29;
+}
+
+.navigation-card__link_burger:last-child {
+    margin-bottom: 0;
+}
