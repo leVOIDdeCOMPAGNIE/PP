@@ -8,10 +8,6 @@ buttonPageUp.addEventListener('click', () => {
   });
 });
 
-if (window.screen.width > 960) {
-  buttonPageUp.style.right = 20 + ((window.screen.width - 960)/2)
-}
-
 const region = document.querySelector('.map__region');
 const pinOne = document.getElementById('pin-1');
 const pinTwo = document.getElementById('pin-2');
@@ -95,120 +91,16 @@ if (animatedItems.length > 0) {
 }
 
 // /*Слайдер*/
-// function setSlider (sectionSlide, sectionSlides, sectionContainer, sectionArrowLeft, sectionArrowRight) {
+setSlider (document.querySelector(".partners__slider_item:nth-child(2)"),
+document.querySelectorAll(".partners__slider_item"),
+document.querySelector(".partners__slider_items"),
+document.querySelector(".partners__slider_button_left"),
+document.querySelector(".partners__slider_button_right"),
+document.querySelectorAll(".partners__handler"));
 
-//   let currentPositionOfScroll = 0;
-//   let newPositionOfScroll = 0;
-//   const slide = sectionSlide;
-//   const slides = sectionSlides;
-//   const sliderContainer = sectionContainer;
-//   const sliderArrowLeft = sectionArrowLeft;
-//   const sliderArrowRight = sectionArrowRight;
-  
-//   const getMarginRightOfElement = () => {
-//     const slideMargin = window.getComputedStyle(slide).marginRight;
-//     const slideMarginWidth = parseInt(slideMargin.slice(0, -2));
-  
-//     return slideMarginWidth;
-//   }
-  
-//   const getWidthSlideWithMatgin = () => {  
-//     const slideWidth = slide.clientWidth;
-//     const slideMargin = getMarginRightOfElement(slide);
-  
-//     const slideWithMarginWidth = slideWidth + slideMargin;
-  
-//     return slideWithMarginWidth;
-//   }
-  
-//   const getSliderContentWidth = () => {
-//     const slideWidth = slide.clientWidth;
-//     const countOfSlides = slides.length;
-//     const slideMarginWidth = getMarginRightOfElement(slide);
-  
-//     const sliderContentWidth = (slideWidth + slideMarginWidth) * countOfSlides - slideMarginWidth;
-  
-//     return sliderContentWidth;
-//   }
-  
-//   const getEndPositionOfScroll = () => {
-//     const sliderContentWidth = getSliderContentWidth();
-  
-//     const endPositionOfScroll = sliderContentWidth - sliderContainer.clientWidth;
-  
-//     return endPositionOfScroll;
-//   }
-  
-//   const getNewPositionOfScrollRight = () => {
-//     const endPositionOfScroll = getEndPositionOfScroll();
-//     const slideWithMarginWidth = getWidthSlideWithMatgin();
-//     const positionOfScrollBeforeLastSlide = endPositionOfScroll - slideWithMarginWidth;
-  
-  
-//     if (currentPositionOfScroll <= positionOfScrollBeforeLastSlide) {
-//       newPositionOfScroll = currentPositionOfScroll + slideWithMarginWidth;
-//     }
-//     else if (currentPositionOfScroll === endPositionOfScroll) {
-//       newPositionOfScroll = 0;
-//     }
-//     else {
-//       newPositionOfScroll = endPositionOfScroll;
-//     }
-  
-//     return newPositionOfScroll;
-//   }
-  
-//   const getNewPositionOfScrollLeft = () => {
-//     const endPositionOfScroll = getEndPositionOfScroll();
-//     const slideWithMarginWidth = getWidthSlideWithMatgin();
-  
-//     if (currentPositionOfScroll > slideWithMarginWidth) {
-//       newPositionOfScroll = currentPositionOfScroll - slideWithMarginWidth;
-//     }
-//     else if (currentPositionOfScroll === 0) {
-//       newPositionOfScroll = endPositionOfScroll;
-//     }
-//     else {
-//       newPositionOfScroll = 0;
-//     }
-  
-//     return newPositionOfScroll;
-//   }
-  
-//   function scrollSlider(positionOfScroll) {
-//     sliderContainer.scroll({
-//       left: positionOfScroll,
-//       behavior: 'smooth'
-//     });
-  
-//     currentPositionOfScroll = newPositionOfScroll;
-//   };
-  
-//   const scrollRight = () => {
-//     newPositionOfScroll = getNewPositionOfScrollRight();
-  
-//     scrollSlider(newPositionOfScroll);  
-//   }
-  
-//   const scrollLeft = () => {
-//     newPositionOfScroll = getNewPositionOfScrollLeft();
-  
-//     scrollSlider(newPositionOfScroll);  
-//   }
-  
-//   sliderArrowLeft.addEventListener("click", scrollLeft);
-//   sliderArrowRight.addEventListener("click", scrollRight);
-  
-//   }
-  
-//   setSlider (document.querySelector(".partners__slider_item"),
-//   document.querySelectorAll(".partners__slider_item"),
-//   document.querySelector(".partners__slider_items"),
-//   document.querySelector(".partners__slider_button_left"),
-//   document.querySelector(".partners__slider_button_right"));
-  
-//   setSlider (document.querySelector(".projects__slider_item"),
-//   document.querySelectorAll(".projects__slider_item"),
-//   document.querySelector(".projects__slider_items"),
-//   document.querySelector(".projects__slider_button_left"),
-//   document.querySelector(".projects__slider_button_right"));
+setSlider (document.querySelector(".projects__slider_item:nth-child(2)"),
+document.querySelectorAll(".projects__slider_item"),
+document.querySelector(".projects__slider_items"),
+document.querySelector(".projects__slider_button_left"),
+document.querySelector(".projects__slider_button_right"),
+document.querySelectorAll(".projects__handler"));

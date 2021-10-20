@@ -1,14 +1,14 @@
 /*Слайдер*/
-function setSlider (sectionSlide, sectionSlides, sectionContainer, sectionArrowLeft, sectionArrowRight) {
+function setSlider (sectionSlide, sectionSlides, sectionContainer, sectionArrowLeft, sectionArrowRight, sectionDots) {
 
   let currentPositionOfScroll = 0;
   let newPositionOfScroll = 0;
   const slide = sectionSlide;
   const slides = sectionSlides;
   const sliderContainer = sectionContainer;
-  const sliderContainerChild = sectionContainer.children;
   const sliderArrowLeft = sectionArrowLeft;
   const sliderArrowRight = sectionArrowRight;
+  const dots = sectionDots;
   
   const getMarginRightOfElement = () => {
     const slideMargin = window.getComputedStyle(slide).marginLeft;
@@ -79,6 +79,37 @@ function setSlider (sectionSlide, sectionSlides, sectionContainer, sectionArrowL
   
     return newPositionOfScroll;
   }
+
+  const getVisibleNumberOfSlides = () => {
+    const containerWidth = sliderContainer.clientWidth;
+    const slideWithMargin = getWidthSlideWithMargin();
+  
+    const visibleNumberOfSlides = Math.ceil(containerWidth / slideWithMargin);
+    return visibleNumberOfSlides;
+  }
+    
+  for (let i = 0; i < getVisibleNumberOfSlides(); i++) {
+    dots[i].classList.add('slider__handler_last-visible');   
+  }
+
+  const changeDotsColor = (newPositionOfScroll) => {
+    newPositionOfScroll = getNewPositionOfScrollRight();
+    slideWithMarginWidth = getWidthSlideWithMargin();
+    const slidesWasShown = Math.ceil(currentPositionOfScroll/slideWithMarginWidth);
+    if (currentPositionOfScroll === 0 && (currentPositionOfScroll + slideWithMarginWidth) === newPositionOfScroll) {
+      for (let i = getVisibleNumberOfSlides(); i < dots.length; i++) {
+        dots[i].classList.remove('slider__handler_last-visible');
+      } 
+    } else {
+      for (let i = 0; i < getVisibleNumberOfSlides() + slidesWasShown; i++) {
+        dots[i].classList.add('slider__handler_last-visible');
+      }
+      for (let i = getVisibleNumberOfSlides() + slidesWasShown; i < dots.length; i++) {
+        dots[i].classList.remove('slider__handler_last-visible');
+      }
+    }
+    
+  }
   
   function scrollSlider(positionOfScroll) {
     sliderContainer.scroll({
@@ -90,40 +121,25 @@ function setSlider (sectionSlide, sectionSlides, sectionContainer, sectionArrowL
   };
   
   const scrollRight = () => {
-    newPositionOfScroll = getNewPositionOfScrollRight();
+    newPositionOfScroll = getNewPositionOfScrollRight();    
   
-    scrollSlider(newPositionOfScroll);  
+    scrollSlider(newPositionOfScroll);
+
+    changeDotsColor(newPositionOfScroll);
+  
   }
   
   const scrollLeft = () => {
     newPositionOfScroll = getNewPositionOfScrollLeft();
   
-    scrollSlider(newPositionOfScroll);  
+    scrollSlider(newPositionOfScroll);
+    
+    console.log(newPositionOfScroll);
+
+    changeDotsColor(newPositionOfScroll);
   }
   
   sliderArrowLeft.addEventListener("click", scrollLeft);
-  sliderArrowRight.addEventListener("click", scrollRight);
+  sliderArrowRight.addEventListener("click", scrollRight); 
 
-  const getVisibleNumberOfSlides = () => {
-    const containerWidth = sliderContainer.clientWidth;
-    const slideWithMargin = getWidthSlideWithMargin();
-  
-    const visibleNumberOfSlides = Math.ceil(containerWidth / slideWithMargin);
-    return visibleNumberOfSlides;
-  }
-  
-  console.log(getVisibleNumberOfSlides());
-  
-  }
-  
-  setSlider (document.querySelector(".partners__slider_item:nth-child(2)"),
-  document.querySelectorAll(".partners__slider_item"),
-  document.querySelector(".partners__slider_items"),
-  document.querySelector(".partners__slider_button_left"),
-  document.querySelector(".partners__slider_button_right"));
-  
-  setSlider (document.querySelector(".projects__slider_item:nth-child(2)"),
-  document.querySelectorAll(".projects__slider_item"),
-  document.querySelector(".projects__slider_items"),
-  document.querySelector(".projects__slider_button_left"),
-  document.querySelector(".projects__slider_button_right"));
+  } 
