@@ -1,0 +1,9 @@
+.navigation-card__burger_opened {
+    display: flex;
+}
+
+@media screen and (min-width: 890px) {
+    .navigation-card__burger_opened {
+        display: none;
+    }
+}

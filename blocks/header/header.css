@@ -10,7 +10,7 @@
 
 @media screen and (max-width: 550px) {
     .header {
-        grid-template-columns: 1fr auto;
+        grid-template-columns: 220px auto;
         grid-template-rows: 120px;
     }
 }
