@@ -90,121 +90,121 @@ if (animatedItems.length > 0) {
   animOnScroll();
 }
 
-/*Слайдер*/
-function setSlider (sectionSlide, sectionSlides, sectionContainer, sectionArrowLeft, sectionArrowRight) {
+// /*Слайдер*/
+// function setSlider (sectionSlide, sectionSlides, sectionContainer, sectionArrowLeft, sectionArrowRight) {
 
-  let currentPositionOfScroll = 0;
-  let newPositionOfScroll = 0;
-  const slide = sectionSlide;
-  const slides = sectionSlides;
-  const sliderContainer = sectionContainer;
-  const sliderArrowLeft = sectionArrowLeft;
-  const sliderArrowRight = sectionArrowRight;
+//   let currentPositionOfScroll = 0;
+//   let newPositionOfScroll = 0;
+//   const slide = sectionSlide;
+//   const slides = sectionSlides;
+//   const sliderContainer = sectionContainer;
+//   const sliderArrowLeft = sectionArrowLeft;
+//   const sliderArrowRight = sectionArrowRight;
   
-  const getMarginRightOfElement = () => {
-    const slideMargin = window.getComputedStyle(slide).marginRight;
-    const slideMarginWidth = parseInt(slideMargin.slice(0, -2));
+//   const getMarginRightOfElement = () => {
+//     const slideMargin = window.getComputedStyle(slide).marginRight;
+//     const slideMarginWidth = parseInt(slideMargin.slice(0, -2));
   
-    return slideMarginWidth;
-  }
+//     return slideMarginWidth;
+//   }
   
-  const getWidthSlideWithMatgin = () => {  
-    const slideWidth = slide.clientWidth;
-    const slideMargin = getMarginRightOfElement(slide);
+//   const getWidthSlideWithMatgin = () => {  
+//     const slideWidth = slide.clientWidth;
+//     const slideMargin = getMarginRightOfElement(slide);
   
-    const slideWithMarginWidth = slideWidth + slideMargin;
+//     const slideWithMarginWidth = slideWidth + slideMargin;
   
-    return slideWithMarginWidth;
-  }
+//     return slideWithMarginWidth;
+//   }
   
-  const getSliderContentWidth = () => {
-    const slideWidth = slide.clientWidth;
-    const countOfSlides = slides.length;
-    const slideMarginWidth = getMarginRightOfElement(slide);
+//   const getSliderContentWidth = () => {
+//     const slideWidth = slide.clientWidth;
+//     const countOfSlides = slides.length;
+//     const slideMarginWidth = getMarginRightOfElement(slide);
   
-    const sliderContentWidth = (slideWidth + slideMarginWidth) * countOfSlides - slideMarginWidth;
+//     const sliderContentWidth = (slideWidth + slideMarginWidth) * countOfSlides - slideMarginWidth;
   
-    return sliderContentWidth;
-  }
+//     return sliderContentWidth;
+//   }
   
-  const getEndPositionOfScroll = () => {
-    const sliderContentWidth = getSliderContentWidth();
+//   const getEndPositionOfScroll = () => {
+//     const sliderContentWidth = getSliderContentWidth();
   
-    const endPositionOfScroll = sliderContentWidth - sliderContainer.clientWidth;
+//     const endPositionOfScroll = sliderContentWidth - sliderContainer.clientWidth;
   
-    return endPositionOfScroll;
-  }
+//     return endPositionOfScroll;
+//   }
   
-  const getNewPositionOfScrollRight = () => {
-    const endPositionOfScroll = getEndPositionOfScroll();
-    const slideWithMarginWidth = getWidthSlideWithMatgin();
-    const positionOfScrollBeforeLastSlide = endPositionOfScroll - slideWithMarginWidth;
+//   const getNewPositionOfScrollRight = () => {
+//     const endPositionOfScroll = getEndPositionOfScroll();
+//     const slideWithMarginWidth = getWidthSlideWithMatgin();
+//     const positionOfScrollBeforeLastSlide = endPositionOfScroll - slideWithMarginWidth;
   
   
-    if (currentPositionOfScroll <= positionOfScrollBeforeLastSlide) {
-      newPositionOfScroll = currentPositionOfScroll + slideWithMarginWidth;
-    }
-    else if (currentPositionOfScroll === endPositionOfScroll) {
-      newPositionOfScroll = 0;
-    }
-    else {
-      newPositionOfScroll = endPositionOfScroll;
-    }
+//     if (currentPositionOfScroll <= positionOfScrollBeforeLastSlide) {
+//       newPositionOfScroll = currentPositionOfScroll + slideWithMarginWidth;
+//     }
+//     else if (currentPositionOfScroll === endPositionOfScroll) {
+//       newPositionOfScroll = 0;
+//     }
+//     else {
+//       newPositionOfScroll = endPositionOfScroll;
+//     }
   
-    return newPositionOfScroll;
-  }
+//     return newPositionOfScroll;
+//   }
   
-  const getNewPositionOfScrollLeft = () => {
-    const endPositionOfScroll = getEndPositionOfScroll();
-    const slideWithMarginWidth = getWidthSlideWithMatgin();
+//   const getNewPositionOfScrollLeft = () => {
+//     const endPositionOfScroll = getEndPositionOfScroll();
+//     const slideWithMarginWidth = getWidthSlideWithMatgin();
   
-    if (currentPositionOfScroll > slideWithMarginWidth) {
-      newPositionOfScroll = currentPositionOfScroll - slideWithMarginWidth;
-    }
-    else if (currentPositionOfScroll === 0) {
-      newPositionOfScroll = endPositionOfScroll;
-    }
-    else {
-      newPositionOfScroll = 0;
-    }
+//     if (currentPositionOfScroll > slideWithMarginWidth) {
+//       newPositionOfScroll = currentPositionOfScroll - slideWithMarginWidth;
+//     }
+//     else if (currentPositionOfScroll === 0) {
+//       newPositionOfScroll = endPositionOfScroll;
+//     }
+//     else {
+//       newPositionOfScroll = 0;
+//     }
   
-    return newPositionOfScroll;
-  }
+//     return newPositionOfScroll;
+//   }
   
-  function scrollSlider(positionOfScroll) {
-    sliderContainer.scroll({
-      left: positionOfScroll,
-      behavior: 'smooth'
-    });
+//   function scrollSlider(positionOfScroll) {
+//     sliderContainer.scroll({
+//       left: positionOfScroll,
+//       behavior: 'smooth'
+//     });
   
-    currentPositionOfScroll = newPositionOfScroll;
-  };
+//     currentPositionOfScroll = newPositionOfScroll;
+//   };
   
-  const scrollRight = () => {
-    newPositionOfScroll = getNewPositionOfScrollRight();
+//   const scrollRight = () => {
+//     newPositionOfScroll = getNewPositionOfScrollRight();
   
-    scrollSlider(newPositionOfScroll);  
-  }
+//     scrollSlider(newPositionOfScroll);  
+//   }
   
-  const scrollLeft = () => {
-    newPositionOfScroll = getNewPositionOfScrollLeft();
+//   const scrollLeft = () => {
+//     newPositionOfScroll = getNewPositionOfScrollLeft();
   
-    scrollSlider(newPositionOfScroll);  
-  }
+//     scrollSlider(newPositionOfScroll);  
+//   }
   
-  sliderArrowLeft.addEventListener("click", scrollLeft);
-  sliderArrowRight.addEventListener("click", scrollRight);
+//   sliderArrowLeft.addEventListener("click", scrollLeft);
+//   sliderArrowRight.addEventListener("click", scrollRight);
   
-  }
+//   }
   
-  setSlider (document.querySelector(".partners__slider_item"),
-  document.querySelectorAll(".partners__slider_item"),
-  document.querySelector(".partners__slider_items"),
-  document.querySelector(".partners__slider_button_left"),
-  document.querySelector(".partners__slider_button_right"));
+//   setSlider (document.querySelector(".partners__slider_item"),
+//   document.querySelectorAll(".partners__slider_item"),
+//   document.querySelector(".partners__slider_items"),
+//   document.querySelector(".partners__slider_button_left"),
+//   document.querySelector(".partners__slider_button_right"));
   
-  setSlider (document.querySelector(".projects__slider_item"),
-  document.querySelectorAll(".projects__slider_item"),
-  document.querySelector(".projects__slider_items"),
-  document.querySelector(".projects__slider_button_left"),
-  document.querySelector(".projects__slider_button_right"));
+//   setSlider (document.querySelector(".projects__slider_item"),
+//   document.querySelectorAll(".projects__slider_item"),
+//   document.querySelector(".projects__slider_items"),
+//   document.querySelector(".projects__slider_button_left"),
+//   document.querySelector(".projects__slider_button_right"));

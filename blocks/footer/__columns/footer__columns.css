@@ -6,3 +6,10 @@
   margin: 0 80px;
   padding-top: 20px;
 }
+
+@media screen and (max-width: 505px) {
+  .footer__columns {     
+    flex-direction: column;
+    align-items: center;
+  }
+}

@@ -149,11 +149,12 @@
             </div>
         </section>
         <section class="projects">
-            <img class="projects__pazzl_position_top animated" src="./images/projects/project_pazzl.svg" alt="Анимированный элемент">
-            <img class="projects__pazzl_position_right" src="./images/projects/project_pazzl-002.svg" alt="Анимированный элемент">
-            <h2 class="projects__title">А также:</h2>
-            <p class="projects__subtitle">Другие проекты фонда</p>
-            <div class="projects__slider slider">
+          <img class="projects__pazzl_position_top animated" src="./images/projects/project_pazzl.svg" alt="Анимированный элемент">
+          <img class="projects__pazzl_position_right" src="./images/projects/project_pazzl-002.svg" alt="Анимированный элемент">
+          <h2 class="projects__title">А также:</h2>
+          <p class="projects__subtitle">Другие проекты фонда</p>
+          <div class="projects__slider slider">
+            <div class="projects__slider_container slider__container">
                 <button class="projects__slider_button projects__slider_button_left slider__button slider__button_left"></button>
                 <ul class="projects__slider_items slider__items">
                     <li class="projects__slider_item slider__item">
@@ -182,19 +183,25 @@
                     </li>
                     <li class="projects__slider_item slider__item">
                         <div class="projects__slider_card">
-                            <img class="projects__slider_image" src="./images/projects/project-001.png">
-                            <h3 class="projects__slider_title"></h3>
+                            <img class="projects__slider_image" src="./images/projects/nastolnaya-igra.png">
+                            <h3 class="projects__slider_title">Настольная игра "Победа"</h3>
                         </div>
                     </li>
                     <li class="projects__slider_item slider__item">
                         <div class="projects__slider_card">
-                            <img class="projects__slider_image" src="./images/projects/project-003.png">
-                            <h3 class="projects__slider_title"></h3>
+                            <img class="projects__slider_image" src="./images/projects/aktivnoe-dolgoletie.png">
+                            <h3 class="projects__slider_title">Активное долголетие</h3>
                         </div>
                     </li>
                 </ul>
                 <button class="projects__slider_button projects__slider_button_right slider__button slider__button_right"></button>
             </div>
+              <div class="slider__handlers-holder">
+                <button class="slider__handler"></button>
+                <button class="slider__handler"></button>
+                <button class="slider__handler"></button>
+              </div>
+          </div>
         </section>
         <section class="map">
             <h2 class="map__title">куда идти?</h2>
@@ -666,19 +673,28 @@
             <h2 class="partners__title">Кто с нами?</h2>
             <p class="partners__subtitle">Партнеры</p>
             <div class="partners__slider slider">
-                <button class="partners__slider_button partners__slider_button_left slider__button slider__button_left"></button>
-                <ul class="slider__items partners__slider_items">
-                    <li class="partners__slider_item slider__item"><img class="partners__slider_logo" src="./images/partners/partners-logo1.png" alt="Название компании"></li>
-                    <li class="partners__slider_item slider__item"><img class="partners__slider_logo" src="./images/partners/partners-logo2.png" alt="Название компании"></li>
-                    <li class="partners__slider_item slider__item"><img class="partners__slider_logo" src="./images/partners/partners-logo3.png" alt="Название компании"></li>
-                    <li class="partners__slider_item slider__item"><img class="partners__slider_logo" src="./images/partners/partners-logo4.png" alt="Название компании"></li>
-                    <li class="partners__slider_item slider__item"><img class="partners__slider_logo" src="./images/partners/partners-logo5.png" alt="Название компании"></li>
-                    <li class="partners__slider_item slider__item"><img class="partners__slider_logo" src="./images/partners/partners-logo6.png" alt="Название компании"></li>
-                    <li class="partners__slider_item slider__item"><img class="partners__slider_logo" src="./images/partners/partners-logo1.png" alt="Название компании"></li>
-                    <li class="partners__slider_item slider__item"><img class="partners__slider_logo" src="./images/partners/partners-logo2.png" alt="Название компании"></li>
-                </ul>
-                <button class="partners__slider_button partners__slider_button_right slider__button slider__button_right"></button>
-            </div>
+                <div class="slider__container">
+                  <button class="partners__slider_button partners__slider_button_left slider__button slider__button_left"></button>
+                  <ul class="slider__items partners__slider_items">
+                      <li class="partners__slider_item slider__item"><img class="partners__slider_logo" src="./images/partners/logo_sber.png" alt="Сбербанк"></li>
+                      <li class="partners__slider_item slider__item"><img class="partners__slider_logo" src="./images/partners/rosatom.png" alt="Росатом"></li>
+                      <li class="partners__slider_item slider__item"><img class="partners__slider_logo" src="./images/partners/luk.png" alt="Лукойл"></li>
+                      <li class="partners__slider_item slider__item"><img class="partners__slider_logo" src="./images/partners/magnit.png" alt="Магнит"></li>
+                      <li class="partners__slider_item slider__item"><img class="partners__slider_logo" src="./images/partners/partners-logo1.png" alt="Название компании"></li>
+                      <li class="partners__slider_item slider__item"><img class="partners__slider_logo" src="./images/partners/partners-logo2.png" alt="Название компании"></li>
+                      <li class="partners__slider_item slider__item"><img class="partners__slider_logo" src="./images/partners/partners-logo3.png" alt="Название компании"></li>
+                      <li class="partners__slider_item slider__item"><img class="partners__slider_logo" src="./images/partners/partners-logo4.png" alt="Название компании"></li>
+                      <li class="partners__slider_item slider__item"><img class="partners__slider_logo" src="./images/partners/partners-logo5.png" alt="Название компании"></li>
+                      <li class="partners__slider_item slider__item"><img class="partners__slider_logo" src="./images/partners/partners-logo6.png" alt="Название компании"></li>
+                  </ul>
+                  <button class="partners__slider_button partners__slider_button_right slider__button slider__button_right"></button>
+              </div>
+              <div class="slider__handlers-holder">
+                <button class="slider__handler"></button>
+                <button class="slider__handler"></button>
+                <button class="slider__handler"></button>
+              </div>
+            </div>            
         </section>
     </main>
     <footer class="footer">
@@ -697,28 +713,28 @@
             <div class="footer__column">
                 <h3 class="footer__title">Мы в соцсетях:</h3>
                 <ul class="footer__list footer__list_social">
-                    <li class="footer__list-item">
+                    <li class="footer__list-item footer__list-item_social">
                         <a href="https://www.facebook.com/pamyatpokoleniy/?ref=ts&fref=ts" class="footer__social">
                             <img src="./images/footer/fb_icon.svg" alt="Facebook" class="footer__social-icon">
                         </a>
                     </li>
-                    <li class="footer__list-item">
-                        <a href="https://www.facebook.com/pamyatpokoleniy/?ref=ts&fref=ts" class="footer__social">
+                    <li class="footer__list-item footer__list-item_social">
+                        <a href="https://www.instagram.com/gvozdika.memory/?hl=ru" class="footer__social">
                             <img src="./images/footer/instagram_icon.svg" alt="Instagram" class="footer__social-icon">
                         </a>
                     </li>
-                    <li class="footer__list-item">
-                        <a href="https://www.facebook.com/pamyatpokoleniy/?ref=ts&fref=ts" class="footer__social">
+                    <li class="footer__list-item footer__list-item_social">
+                        <a href="https://vk.com/pamyatpokoleniy" class="footer__social">
                             <img src="./images/footer/vk_icon.svg" alt="ВКонтакте" class="footer__social-icon">
                         </a>
                     </li>
-                    <li class="footer__list-item">
-                        <a href="https://www.facebook.com/pamyatpokoleniy/?ref=ts&fref=ts" class="footer__social">
+                    <li class="footer__list-item footer__list-item_social">
+                        <a href="https://www.youtube.com/channel/UCWB-OL9ZIOGrNne8AFe5tdA" class="footer__social">
                             <img src="./images/footer/youtube_icon.svg" alt="Youtube" class="footer__social-icon">
                         </a>
                     </li>
-                    <li class="footer__list-item">
-                        <a href="https://www.facebook.com/pamyatpokoleniy/?ref=ts&fref=ts" class="footer__social">
+                    <li class="footer__list-item footer__list-item_social">
+                        <a href="https://ok.ru/pamyatpokoleniy" class="footer__social">
                             <img src="./images/footer/odnoklassniki_icon.svg" alt="Одноклассники" class="footer__social-icon">
                         </a>
                     </li>
@@ -731,6 +747,7 @@
     <path fill-rule="evenodd" clip-rule="evenodd"
       d="M35.412 17.7059L30.3633 22.7547C28.2632 20.6546 24.8549 20.6546 22.7548 22.7547C20.6547 24.8548 20.6547 28.263 22.7548 30.3632L17.706 35.4119L12.6573 30.3632C14.7574 28.2631 14.7574 24.8548 12.6573 22.7547C10.5572 20.6546 7.14894 20.6546 5.04884 22.7547L9.51474e-05 17.706L17.699 0.00707797L35.4049 17.713L35.412 17.7059Z" />
   </svg>
+    <script src="./scripts/slider.js"></script>
     <script src="./scripts/script.js"></script>
 </body>
 

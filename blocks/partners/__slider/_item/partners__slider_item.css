@@ -1,15 +1,20 @@
-.partners__slider_item {  
-  margin-right: 31px;
+.partners__slider_item {
+  box-sizing: border-box;
+  margin-left: 31px;
+  display: flex;
+  height: 98px;
+  width: 98px;
+  border-radius: 50%;
 }
 
 @media screen and (max-width: 640px) {
   .partners__slider_item {
-    margin-right: 25px;
+    margin-left: 25px;
   }
 }
 
 @media screen and (max-width: 320px) {
   .partners__slider_item {
-    margin-right: 10px;
+    margin-left: 10px;
   }
 }

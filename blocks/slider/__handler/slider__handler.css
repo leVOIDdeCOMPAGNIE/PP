@@ -1,0 +1,9 @@
+.slider__handler{
+    height: 13px;
+    width: 13px;
+    border: 1px solid #9D9E9E;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: transparent;
+    margin-right: 8px;
+}

@@ -1,0 +1,17 @@
+.projects__slider_container {
+  margin-bottom: 10px;
+  width: 100%;
+  background: linear-gradient(to left, #00926F 28.5%, #6D097A 28.5% 50%, #00926F 50% 71%, #6D097A 71%);
+}
+
+@media screen and (max-width: 800px) {
+  .projects__slider_container {
+    background: linear-gradient(to left, #6D097A 35%, #00926F 35% 65%, #6D097A 65%);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .projects__slider_container {
+    background: linear-gradient(to left, #00926F 50%, #6D097A 50%); 
+  }
+}

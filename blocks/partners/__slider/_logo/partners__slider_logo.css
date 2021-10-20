@@ -1,8 +1,10 @@
 .partners__slider_logo {
   box-sizing: border-box;
-  height: 98px;
+  /* height: auto;
   width: 98px;
-  border-radius: 50%;  
+  border-radius: 50%; */
+  width: 100%;
+  margin: auto;
 }
 
 @media screen and (max-width: 640px) {
