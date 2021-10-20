@@ -32,9 +32,10 @@
 @import url(../blocks/intro/__description/intro__description.css);
 @import url(../blocks/intro/__description-arc/intro__description-arc.css);
 @import url(../blocks/intro/__description-link/intro__description-link.css);
-@import url(../blocks/intro/__handlers-holder/intro__handlers-holder.css);
-@import url(../blocks/intro/__slider-handler/intro__slider-handler.css);
-@import url(../blocks/intro/__photo/intro__photo.css);
+@import url(../blocks/intro/__slider/intro__slider.css);
+@import url(../blocks/intro/__slider/_images/intro__slider_images.css);
+@import url(../blocks/intro/__slider/_img/intro__slider_img.css);
+@import url(../blocks/intro/__slider/_dots/intro__slider_dots.css);
 @import url(../blocks/about/about.css);
 @import url(../blocks/about/__description-holder/about__description-holder.css);
 @import url(../blocks/about/__description/about__description.css);
