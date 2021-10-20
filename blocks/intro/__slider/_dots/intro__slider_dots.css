@@ -1,0 +1,23 @@
+.intro__slider_dots {
+    position: absolute;
+    bottom: -290px;
+    right: 203px;
+    display: flex;
+    justify-content: center;
+    width: fit-content;
+  }
+
+.dot {
+  height: 10px;
+  width: 10px;
+  border: 3px solid hsl(0, 0%, 100%);
+  border-radius: 50%;
+  background: transparent;
+  margin: 0 3px;
+  cursor: pointer;
+}
+
+.active-dot {
+background: #00BF92;
+cursor: default;
+}

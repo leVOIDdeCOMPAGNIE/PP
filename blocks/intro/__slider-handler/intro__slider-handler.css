@@ -1,9 +1,0 @@
-.intro__slider-handler{
-    height: 17px;
-    width: 17px;
-    border: 2px solid hsl(0, 0%, 100%);
-    border-radius: 50%;
-    cursor: pointer;
-    background: transparent;
-    margin-right: 12px;
-}
