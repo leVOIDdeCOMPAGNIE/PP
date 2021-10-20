@@ -61,6 +61,7 @@
 @import url(../blocks/slider/__item/slider__item.css);
 @import url(../blocks/slider/__items/slider__items.css);
 @import url(../blocks/slider/__handler/slider__handler.css);
+@import url(../blocks/slider/__handler/_last-visible/slider__handler_last-visible.css);
 @import url(../blocks/slider/__handlers-holder/slider__handlers-holder.css);
 @import url(../blocks/projects/projects.css);
 @import url(../blocks/projects/__title/projects__title.css);
