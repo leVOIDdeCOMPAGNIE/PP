@@ -1,13 +1,9 @@
 .projects__slider_item {  
-  margin-right: 60px;  
-}
-
-.projects__slider_item:last-child {
-  margin-right: 0;
+  margin-left: 60px;  
 }
 
 @media screen and (max-width: 320px) {
   .projects__slider_item {
-    margin-right: 35px;
+    margin-left: 35px;
   }
 }
