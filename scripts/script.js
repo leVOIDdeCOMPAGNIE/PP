@@ -211,3 +211,4 @@ document.querySelectorAll('.navigation-card__link_burger').forEach(w => {
         intrvl = setInterval(animateSlider, interval);
     }
 }
+}
