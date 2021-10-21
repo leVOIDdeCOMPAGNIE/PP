@@ -106,6 +106,7 @@ setSlider(document.querySelector(".projects__slider_item:nth-child(2)"),
     document.querySelector(".projects__slider_button_right"),
     document.querySelectorAll(".projects__handler"));
 
+// Бургер меню
 const burgerButton = document.querySelector(".header__burger-button");
 const burgerMenu = document.querySelector(".navigation-card__burger");
 const closeButton = document.querySelector(".navigation-card__close-button");
