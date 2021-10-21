@@ -125,26 +125,28 @@ document.querySelectorAll('.navigation-card__link_burger').forEach(w => {
     })
 })
 
-const sliders = document.querySelectorAll(".intro__slider");
-// interval between switching images
-// can't be less than your animation duration in css!
-const interval = 2800;
-// if you don't want to first animation last longer than other animations  
-// set animDuration (in miliseconds) to your value of animation duration in css
-const animDuration = 900;
 
-for (let i = 0; i < sliders.length; ++i) {
-    const slider = sliders[i];
-    const dots = slider.querySelector(".intro__slider_dots");
-    const sliderImgs = slider.querySelectorAll(".intro__slider_img");
-
-    let currImg = 0;
-    let prevImg = sliderImgs.length - 1;
-    let intrvl;
-    let timeout;
-
-    // Creates dots and add listeners to them
-    for (let i = 0; i < sliderImgs.length; ++i) {
+{
+    const sliders = document.querySelectorAll(".intro__slider");
+    // interval between switching images
+    // can't be less than your animation duration in css!
+    const interval = 5000;
+    // if you don't want to first animation last longer than other animations  
+    // set animDuration (in miliseconds) to your value of animation duration in css
+    const animDuration = 1000;
+  
+    for (let i = 0; i < sliders.length; ++i) {
+      const slider = sliders[i];
+      const dots = slider.querySelector(".intro__slider_dots");
+      const sliderImgs = slider.querySelectorAll(".intro__slider_img");
+  
+      let currImg = 0;
+      let prevImg = sliderImgs.length - 1;
+      let intrvl;
+      let timeout;
+  
+      // Creates dots and add listeners to them
+      for (let i = 0; i < sliderImgs.length; ++i) {
         const dot = document.createElement("div");
         dot.classList.add("dot");
         dots.appendChild(dot);

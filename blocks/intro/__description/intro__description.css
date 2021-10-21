@@ -1,5 +1,7 @@
 .intro__description{
-    width: 225px;
+    display: block;
+    width: 250px;
+    height: 41px;
     font-family: Golos, sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -7,4 +9,7 @@
     line-height: 20px;
     color: hsl(0, 0%, 100%);
     margin: 12px 0 0 37px;
+    text-overflow: ellipsis;
+    white-space: wrap;
+    overflow: hidden;
 }

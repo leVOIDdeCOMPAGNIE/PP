@@ -1,11 +1,14 @@
 .intro__description-link{
+    display: block;
     width: 41px;
     font-family: Golos, sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 7px;
     line-height: 8px;
-    text-decoration-line: underline;
+    cursor: pointer;
+    text-decoration-line: none;
     color: hsl(0, 0%, 100%);
     margin: 9px 0 0 37px;
+
 }

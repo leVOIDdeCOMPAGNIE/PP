@@ -4,6 +4,16 @@
     font-family: Golos, sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 9.5916px;
+    font-size: 9px;
+    line-height: 11px;
+    transition: font-size .3s;
+}
+
+.intro__item-link:hover{
+    text-decoration: underline;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 10px;
     line-height: 11px;
 }
+
