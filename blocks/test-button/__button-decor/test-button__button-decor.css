@@ -1,4 +1,10 @@
 .test-button__button-decor{
     position: absolute;
     left: 216px;
+    bottom: -25px;
+    transition: fill .3s;
+}
+
+.test-button__button:hover + .test-button__button-decor{
+    fill: #00BF92;
 }

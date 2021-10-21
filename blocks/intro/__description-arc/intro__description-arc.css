@@ -1,5 +1,10 @@
 .intro__description-arc{
-    position: relative;
-    right: 12px;
-    bottom: 21px;
+    position: absolute;
+    right: 14px;
+    bottom: -22px;
+    transition: fill .3s;
+}
+
+.intro__description-link:hover + .intro__description-arc{
+    fill: #e7a8f0;
 }

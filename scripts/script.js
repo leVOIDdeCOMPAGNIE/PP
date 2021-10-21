@@ -124,10 +124,10 @@ closeButton.addEventListener('click', function() {
     const sliders = document.querySelectorAll(".intro__slider");
     // interval between switching images
     // can't be less than your animation duration in css!
-    const interval = 2800;
+    const interval = 5000;
     // if you don't want to first animation last longer than other animations  
     // set animDuration (in miliseconds) to your value of animation duration in css
-    const animDuration = 900;
+    const animDuration = 1000;
   
     for (let i = 0; i < sliders.length; ++i) {
       const slider = sliders[i];

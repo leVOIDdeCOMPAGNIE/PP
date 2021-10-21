@@ -1,7 +1,7 @@
 .test-button__button{
     width: 167.37px;
     height: 39.16px;
-    background: hsl(293, 86%, 26%);
+    background-color: hsl(293, 86%, 26%);
     border-radius: 20px;
     border-style: none;
     cursor: pointer;
@@ -12,4 +12,9 @@
     font-size: 14.9775px;
     line-height: 18px;
     margin: 0 0 0 71px;
+    transition: background-color .3s;
+}
+
+.test-button__button:hover {
+    background-color: hsl(293, 71%, 38%);
 }

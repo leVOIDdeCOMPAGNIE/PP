@@ -6,7 +6,7 @@
   justify-content: center;
   position: absolute;
   left: 100%;
-  animation: .9s cubic-bezier(0.645, 0.045, 0.355, 1) 0s left;
+  animation: 1s cubic-bezier(0.645, 0.045, 0.355, 1) 0s left;
   animation-fill-mode: forwards;
   background-size: cover !important;
   background-position: 50% !important;
