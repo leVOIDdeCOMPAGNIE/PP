@@ -1,0 +1,13 @@
+.header__copyright {
+    margin: auto;
+    margin-top: 0;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-family: Golos, sans-serif;
+    position: relative;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 18px;
+    color: white;
+}

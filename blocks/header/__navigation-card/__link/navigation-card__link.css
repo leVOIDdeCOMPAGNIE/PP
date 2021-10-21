@@ -3,10 +3,10 @@
     font-family: Golos, sans-serif;
     position: relative;
     font-style: normal;
-    font-weight: normal;
+    font-weight: bold;
     font-size: 10.0712px;
     line-height: 12px;
-    color: #2B2A29;
+    color: black;
     margin: 0;
     padding: 0;
     border: none;
@@ -15,15 +15,9 @@
 }
 
 .navigation-card__link:hover {
+    text-decoration: underline hsl(293, 86%, 26%);
     color: #6B6B6B;
     cursor: url("../../../../images/cursor.svg"), url("../../../../images/cursor.cur"), pointer;
-}
-
-.navigation-card__link:active {
-    border: 1px solid #6B6B6B;
-    border-radius: 60px;
-    color: #6B6B6B;
-    padding: 3px;
 }
 
 .navigation-card__link:last-child {

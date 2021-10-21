@@ -11,25 +11,29 @@
 </head>
 
 <body class="page page__section">
+    <nav>
+        <div class="navigation-card__burger">
+            <button class="navigation-card__close-button" type="button"></button>
+            <a href="#about" class="navigation-card__link_burger">О ДЕМЕНЦИИ<button class="navigation-card__link-button"></button></a>
+            <a href="#projects" class="navigation-card__link_burger">ПРОЕКТЫ<button class="navigation-card__link-button"></button></a>
+            <a href="#partners" class="navigation-card__link_burger">ПАРТНЕРЫ<button class="navigation-card__link-button"></button></a>
+            <a href="./news.html" class="navigation-card__link_burger">НОВОСТИ<button class="navigation-card__link-button"></button></a>
+            <a href="#foundation" class="navigation-card__link_burger">О ФОНДЕ<button class="navigation-card__link-button"></button></a>
+            <a href="#footer" class="navigation-card__link_burger">КОНТАКТЫ<button class="navigation-card__link-button"></button></a>
+            <p class="header__copyright">&copy; Copyright</p>
 
+        </div>
+    </nav>
     <header class="header">
+        <button class="header__burger-button" type="button"></button>
         <div class="logo-card">
             <img class="logo" src="./images/header/logo.svg" alt="Лого">
             <img class="logo-card__pazzle animated" src="./images/header/logo_pazzle.svg" alt="Картинка пазла">
         </div>
         <div class="navigation-card">
-            <button class="navigation-card__button" type="button"></button>
-            <nav class="navigation-card__burger">
-                <button class="navigation-card__close-button" type="button"></button>
-                <a href="#about" class="navigation-card__link_burger">О ДЕМЕНЦИИ</a>
-                <a href="#projects" class="navigation-card__link_burger">ПРОЕКТЫ</a>
-                <a href="#partners" class="navigation-card__link_burger">ПАРТНЕРЫ</a>
-                <a href="./news.html" class="navigation-card__link_burger">НОВОСТИ</a>
-                <a href="#foundation" class="navigation-card__link_burger">О ФОНДЕ</a>
-                <a href="#footer" class="navigation-card__link_burger">КОНТАКТЫ</a>
-            </nav>
+
             <nav class="navigation-card__menu">
-                <a href="#about" class="navigation-card__link navigation-card__link_active">О ДЕМЕНЦИИ</a>
+                <a href="#about" class="navigation-card__link">О ДЕМЕНЦИИ</a>
                 <a href="#projects" class="navigation-card__link">ПРОЕКТЫ</a>
                 <a href="#partners" class="navigation-card__link">ПАРТНЕРЫ</a>
                 <a href="./news.html" class="navigation-card__link">НОВОСТИ</a>
@@ -62,22 +66,22 @@
                 </div>
             </div>
             <img class="intro__picture" src="./images/intro/intro_image_on_the_bench.png" alt="на скамейке">
-                <div class="intro__link-holder">
-                    <div class="intro__description-holder">
-                        <h2 class="intro__description">КАК ВОВРЕМЯ ОПРЕДЕЛИТЬ ДЕМЕНЦИЮ?</h2>
-                        <a class="intro__description-link" href="">ПОДРОБНЕЕ</a>
-                    </div>
-                    <svg class="intro__description-arc" width="63" height="126" viewBox="0 0 63 126" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <div class="intro__link-holder">
+                <div class="intro__description-holder">
+                    <h2 class="intro__description">КАК ВОВРЕМЯ ОПРЕДЕЛИТЬ ДЕМЕНЦИЮ?</h2>
+                    <a class="intro__description-link" href="">ПОДРОБНЕЕ</a>
+                </div>
+                <svg class="intro__description-arc" width="63" height="126" viewBox="0 0 63 126" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0.300049C17.27 0.300049 32.9 7.30006 44.22 18.6201C55.54 29.9401 62.54 45.5701 62.54 62.8401C62.54 80.1101 55.54 95.7401 44.22 107.06C32.9 118.38 17.27 125.38 0 125.38V112.04C13.59 112.04 25.89 106.53 34.8 97.6301C43.7 88.7301 49.21 76.42 49.21 62.83C49.21 49.24 43.7 36.9401 34.8 28.0301C25.9 19.1301 13.59 13.6201 0 13.6201V0.300049Z" fill="#FEFEFE"/>
                     </svg>
-                </div>
+            </div>
             <div class="intro__slider">
-              <div class="intro__slider_images">
-                <div class="intro__slider_img" style="left: 0;"></div>
-                <div class="intro__slider_img"></div>
-                <div class="intro__slider_img"></div>
-              </div>
-              <div class="intro__slider_dots"></div>
+                <div class="intro__slider_images">
+                    <div class="intro__slider_img" style="left: 0;"></div>
+                    <div class="intro__slider_img"></div>
+                    <div class="intro__slider_img"></div>
+                </div>
+                <div class="intro__slider_dots"></div>
             </div>
         </section>
         <section class="about" id="about">
@@ -163,57 +167,57 @@
             <h2 class="projects__title">А также:</h2>
             <p class="projects__subtitle">Другие проекты фонда</p>
             <div class="projects__slider slider">
-              <div class="slider__container projects__slider_container">
-                <button class="projects__slider_button projects__slider_button_left slider__button slider__button_left"></button>
-                <ul class="projects__slider_items slider__items">
-                    <li class="projects__slider_item slider__item">
-                        <div class="projects__slider_card">
-                            <img class="projects__slider_image" src="./images/projects/molody-dushoi.png">
-                            <h3 class="projects__slider_title">Молоды душой</h3>
-                        </div>
-                    </li>
-                    <li class="projects__slider_item slider__item">
-                        <div class="projects__slider_card">
-                            <img class="projects__slider_image" src="./images/projects/krasnaya-gvozdika.png">
-                            <h3 class="projects__slider_title">Красная гвоздика</h3>
-                        </div>
-                    </li>
-                    <li class="projects__slider_item slider__item">
-                        <div class="projects__slider_card">
-                            <img class="projects__slider_image" src="./images/projects/photoproekt.png">
-                            <h3 class="projects__slider_title">Фотопроект "Герои России, какими из не видел никто</h3>
-                        </div>
-                    </li>
-                    <li class="projects__slider_item slider__item">
-                        <div class="projects__slider_card">
-                            <img class="projects__slider_image" src="./images/projects/veterany-rf.png">
-                            <h3 class="projects__slider_title">Ветераны.рф</h3>
-                        </div>
-                    </li>
-                    <li class="projects__slider_item slider__item">
-                        <div class="projects__slider_card">
-                            <img class="projects__slider_image" src="./images/projects/nastolnaya-igra.png">
-                            <h3 class="projects__slider_title">Настольная игра "Победа"</h3>
-                        </div>
-                    </li>
-                    <li class="projects__slider_item slider__item">
-                        <div class="projects__slider_card">
-                            <img class="projects__slider_image" src="./images/projects/aktivnoe-dolgoletie.png">
-                            <h3 class="projects__slider_title">Активное долголетие</h3>
-                        </div>
-                    </li>
-                </ul>
-                <button class="projects__slider_button projects__slider_button_right slider__button slider__button_right"></button>
-              </div>            
-              <div class="slider__handlers-holder projects__handlers-holder">
-                <button class="slider__handler projects__handler"></button>
-                <button class="slider__handler projects__handler"></button>
-                <button class="slider__handler projects__handler"></button>
-                <button class="slider__handler projects__handler"></button>
-                <button class="slider__handler projects__handler"></button>
-                <button class="slider__handler projects__handler"></button>
-              </div>            
-          </div>
+                <div class="slider__container projects__slider_container">
+                    <button class="projects__slider_button projects__slider_button_left slider__button slider__button_left"></button>
+                    <ul class="projects__slider_items slider__items">
+                        <li class="projects__slider_item slider__item">
+                            <div class="projects__slider_card">
+                                <img class="projects__slider_image" src="./images/projects/molody-dushoi.png">
+                                <h3 class="projects__slider_title">Молоды душой</h3>
+                            </div>
+                        </li>
+                        <li class="projects__slider_item slider__item">
+                            <div class="projects__slider_card">
+                                <img class="projects__slider_image" src="./images/projects/krasnaya-gvozdika.png">
+                                <h3 class="projects__slider_title">Красная гвоздика</h3>
+                            </div>
+                        </li>
+                        <li class="projects__slider_item slider__item">
+                            <div class="projects__slider_card">
+                                <img class="projects__slider_image" src="./images/projects/photoproekt.png">
+                                <h3 class="projects__slider_title">Фотопроект "Герои России, какими из не видел никто</h3>
+                            </div>
+                        </li>
+                        <li class="projects__slider_item slider__item">
+                            <div class="projects__slider_card">
+                                <img class="projects__slider_image" src="./images/projects/veterany-rf.png">
+                                <h3 class="projects__slider_title">Ветераны.рф</h3>
+                            </div>
+                        </li>
+                        <li class="projects__slider_item slider__item">
+                            <div class="projects__slider_card">
+                                <img class="projects__slider_image" src="./images/projects/nastolnaya-igra.png">
+                                <h3 class="projects__slider_title">Настольная игра "Победа"</h3>
+                            </div>
+                        </li>
+                        <li class="projects__slider_item slider__item">
+                            <div class="projects__slider_card">
+                                <img class="projects__slider_image" src="./images/projects/aktivnoe-dolgoletie.png">
+                                <h3 class="projects__slider_title">Активное долголетие</h3>
+                            </div>
+                        </li>
+                    </ul>
+                    <button class="projects__slider_button projects__slider_button_right slider__button slider__button_right"></button>
+                </div>
+                <div class="slider__handlers-holder projects__handlers-holder">
+                    <button class="slider__handler projects__handler"></button>
+                    <button class="slider__handler projects__handler"></button>
+                    <button class="slider__handler projects__handler"></button>
+                    <button class="slider__handler projects__handler"></button>
+                    <button class="slider__handler projects__handler"></button>
+                    <button class="slider__handler projects__handler"></button>
+                </div>
+            </div>
         </section>
         <section class="map">
             <h2 class="map__title">куда идти?</h2>
@@ -686,34 +690,34 @@
             <p class="partners__subtitle">Партнеры</p>
             <div class="partners__slider slider">
                 <div class="slider__container">
-                  <button class="partners__slider_button partners__slider_button_left slider__button slider__button_left"></button>
-                  <ul class="slider__items partners__slider_items">
-                      <li class="partners__slider_item slider__item"><img class="partners__slider_logo" src="./images/partners/logo_sber.png" alt="Сбербанк"></li>
-                      <li class="partners__slider_item slider__item"><img class="partners__slider_logo" src="./images/partners/rosatom.png" alt="Росатом"></li>
-                      <li class="partners__slider_item slider__item"><img class="partners__slider_logo" src="./images/partners/luk.png" alt="Лукойл"></li>
-                      <li class="partners__slider_item slider__item"><img class="partners__slider_logo" src="./images/partners/magnit.png" alt="Магнит"></li>
-                      <li class="partners__slider_item slider__item"><img class="partners__slider_logo" src="./images/partners/partners-logo1.png" alt="Название компании"></li>
-                      <li class="partners__slider_item slider__item"><img class="partners__slider_logo" src="./images/partners/partners-logo2.png" alt="Название компании"></li>
-                      <li class="partners__slider_item slider__item"><img class="partners__slider_logo" src="./images/partners/partners-logo3.png" alt="Название компании"></li>
-                      <li class="partners__slider_item slider__item"><img class="partners__slider_logo" src="./images/partners/partners-logo4.png" alt="Название компании"></li>
-                      <li class="partners__slider_item slider__item"><img class="partners__slider_logo" src="./images/partners/partners-logo5.png" alt="Название компании"></li>
-                      <li class="partners__slider_item slider__item"><img class="partners__slider_logo" src="./images/partners/partners-logo6.png" alt="Название компании"></li>
-                  </ul>
-                  <button class="partners__slider_button partners__slider_button_right slider__button slider__button_right"></button>
-              </div>
-              <div class="slider__handlers-holder partners__handlers-holder">
-                <button class="slider__handler partners__handler"></button>
-                <button class="slider__handler partners__handler"></button>
-                <button class="slider__handler partners__handler"></button>
-                <button class="slider__handler partners__handler"></button>
-                <button class="slider__handler partners__handler"></button>
-                <button class="slider__handler partners__handler"></button>
-                <button class="slider__handler partners__handler"></button>
-                <button class="slider__handler partners__handler"></button>
-                <button class="slider__handler partners__handler"></button>
-                <button class="slider__handler partners__handler"></button>
-              </div>
-            </div>            
+                    <button class="partners__slider_button partners__slider_button_left slider__button slider__button_left"></button>
+                    <ul class="slider__items partners__slider_items">
+                        <li class="partners__slider_item slider__item"><img class="partners__slider_logo" src="./images/partners/logo_sber.png" alt="Сбербанк"></li>
+                        <li class="partners__slider_item slider__item"><img class="partners__slider_logo" src="./images/partners/rosatom.png" alt="Росатом"></li>
+                        <li class="partners__slider_item slider__item"><img class="partners__slider_logo" src="./images/partners/luk.png" alt="Лукойл"></li>
+                        <li class="partners__slider_item slider__item"><img class="partners__slider_logo" src="./images/partners/magnit.png" alt="Магнит"></li>
+                        <li class="partners__slider_item slider__item"><img class="partners__slider_logo" src="./images/partners/partners-logo1.png" alt="Название компании"></li>
+                        <li class="partners__slider_item slider__item"><img class="partners__slider_logo" src="./images/partners/partners-logo2.png" alt="Название компании"></li>
+                        <li class="partners__slider_item slider__item"><img class="partners__slider_logo" src="./images/partners/partners-logo3.png" alt="Название компании"></li>
+                        <li class="partners__slider_item slider__item"><img class="partners__slider_logo" src="./images/partners/partners-logo4.png" alt="Название компании"></li>
+                        <li class="partners__slider_item slider__item"><img class="partners__slider_logo" src="./images/partners/partners-logo5.png" alt="Название компании"></li>
+                        <li class="partners__slider_item slider__item"><img class="partners__slider_logo" src="./images/partners/partners-logo6.png" alt="Название компании"></li>
+                    </ul>
+                    <button class="partners__slider_button partners__slider_button_right slider__button slider__button_right"></button>
+                </div>
+                <div class="slider__handlers-holder partners__handlers-holder">
+                    <button class="slider__handler partners__handler"></button>
+                    <button class="slider__handler partners__handler"></button>
+                    <button class="slider__handler partners__handler"></button>
+                    <button class="slider__handler partners__handler"></button>
+                    <button class="slider__handler partners__handler"></button>
+                    <button class="slider__handler partners__handler"></button>
+                    <button class="slider__handler partners__handler"></button>
+                    <button class="slider__handler partners__handler"></button>
+                    <button class="slider__handler partners__handler"></button>
+                    <button class="slider__handler partners__handler"></button>
+                </div>
+            </div>
         </section>
     </main>
     <footer class="footer" id="footer">

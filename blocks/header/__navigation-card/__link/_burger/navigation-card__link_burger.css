@@ -1,0 +1,20 @@
+.navigation-card__link_burger {
+    display: flex;
+    margin-left: 20px;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-family: Golos, sans-serif;
+    position: relative;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 18px;
+    color: white;
+}
+
+.navigation-card__link_burger:hover {
+    color: #25a165;
+    text-decoration: underline #25a165;
+    cursor: url("../../../../../images/cursor.svg"), url("../../../../../images/cursor.cur"), pointer;
+}

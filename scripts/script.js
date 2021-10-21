@@ -92,118 +92,120 @@ if (animatedItems.length > 0) {
 }
 
 // /*Слайдер*/
-setSlider (document.querySelector(".partners__slider_item:nth-child(2)"),
-document.querySelectorAll(".partners__slider_item"),
-document.querySelector(".partners__slider_items"),
-document.querySelector(".partners__slider_button_left"),
-document.querySelector(".partners__slider_button_right"),
-document.querySelectorAll(".partners__handler"));
+setSlider(document.querySelector(".partners__slider_item:nth-child(2)"),
+    document.querySelectorAll(".partners__slider_item"),
+    document.querySelector(".partners__slider_items"),
+    document.querySelector(".partners__slider_button_left"),
+    document.querySelector(".partners__slider_button_right"),
+    document.querySelectorAll(".partners__handler"));
 
-setSlider (document.querySelector(".projects__slider_item:nth-child(2)"),
-document.querySelectorAll(".projects__slider_item"),
-document.querySelector(".projects__slider_items"),
-document.querySelector(".projects__slider_button_left"),
-document.querySelector(".projects__slider_button_right"),
-document.querySelectorAll(".projects__handler"));
+setSlider(document.querySelector(".projects__slider_item:nth-child(2)"),
+    document.querySelectorAll(".projects__slider_item"),
+    document.querySelector(".projects__slider_items"),
+    document.querySelector(".projects__slider_button_left"),
+    document.querySelector(".projects__slider_button_right"),
+    document.querySelectorAll(".projects__handler"));
 
-const burgerButtom = document.querySelector(".navigation-card__button");
+// Бургер меню
+const burgerButton = document.querySelector(".header__burger-button");
 const burgerMenu = document.querySelector(".navigation-card__burger");
 const closeButton = document.querySelector(".navigation-card__close-button");
 
-burgerButtom.addEventListener('click', function() {
+burgerButton.addEventListener('click', function() {
     burgerMenu.classList.toggle('navigation-card__burger_opened');
-    burgerButtom.classList.toggle('navigation-card__button_closed');
 })
 
 closeButton.addEventListener('click', function() {
-    burgerButtom.classList.toggle('navigation-card__button_closed');
     burgerMenu.classList.toggle('navigation-card__burger_opened');
 })
 
-{
-    const sliders = document.querySelectorAll(".intro__slider");
-    // interval between switching images
-    // can't be less than your animation duration in css!
-    const interval = 2800;
-    // if you don't want to first animation last longer than other animations  
-    // set animDuration (in miliseconds) to your value of animation duration in css
-    const animDuration = 900;
-  
-    for (let i = 0; i < sliders.length; ++i) {
-      const slider = sliders[i];
-      const dots = slider.querySelector(".intro__slider_dots");
-      const sliderImgs = slider.querySelectorAll(".intro__slider_img");
-  
-      let currImg = 0;
-      let prevImg = sliderImgs.length - 1;
-      let intrvl;
-      let timeout;
-  
-      // Creates dots and add listeners to them
-      for (let i = 0; i < sliderImgs.length; ++i) {
+document.querySelectorAll('.navigation-card__link_burger').forEach(w => {
+    w.addEventListener('click', function() {
+        burgerMenu.classList.toggle('navigation-card__burger_opened');
+    })
+})
+
+const sliders = document.querySelectorAll(".intro__slider");
+// interval between switching images
+// can't be less than your animation duration in css!
+const interval = 2800;
+// if you don't want to first animation last longer than other animations  
+// set animDuration (in miliseconds) to your value of animation duration in css
+const animDuration = 900;
+
+for (let i = 0; i < sliders.length; ++i) {
+    const slider = sliders[i];
+    const dots = slider.querySelector(".intro__slider_dots");
+    const sliderImgs = slider.querySelectorAll(".intro__slider_img");
+
+    let currImg = 0;
+    let prevImg = sliderImgs.length - 1;
+    let intrvl;
+    let timeout;
+
+    // Creates dots and add listeners to them
+    for (let i = 0; i < sliderImgs.length; ++i) {
         const dot = document.createElement("div");
         dot.classList.add("dot");
         dots.appendChild(dot);
         dot.addEventListener("click", dotClick.bind(null, i), false);
-      }
-  
-      const allDots = dots.querySelectorAll(".dot");
-      allDots[0].classList.add("active-dot");
-  
-      sliderImgs[0].style.left = "0";
-      timeout = setTimeout(() => {
+    }
+
+    const allDots = dots.querySelectorAll(".dot");
+    allDots[0].classList.add("active-dot");
+
+    sliderImgs[0].style.left = "0";
+    timeout = setTimeout(() => {
         animateSlider();
         sliderImgs[0].style.left = "";
         intrvl = setInterval(animateSlider, interval);
-      }, interval - animDuration);   
-  
-      /**
-       * Animates images
-       * @param {number} [nextImg] - index of next image to show
-       * @param {boolean} [right = false] - animate to right
-       */
-      function animateSlider(nextImg, right) {
+    }, interval - animDuration);
+
+    /**
+     * Animates images
+     * @param {number} [nextImg] - index of next image to show
+     * @param {boolean} [right = false] - animate to right
+     */
+    function animateSlider(nextImg, right) {
         if (!nextImg)
-          nextImg = currImg + 1 < sliderImgs.length ? currImg + 2 : 1;
-  
+            nextImg = currImg + 1 < sliderImgs.length ? currImg + 2 : 1;
+
         --nextImg;
         sliderImgs[prevImg].style.animationName = "";
-  
+
         if (!right) {
-          sliderImgs[nextImg].style.animationName = "leftNext";
-          sliderImgs[currImg].style.animationName = "leftCurr";
-        } 
-        else {
-          sliderImgs[nextImg].style.animationName = "rightNext";
-          sliderImgs[currImg].style.animationName = "rightCurr";
+            sliderImgs[nextImg].style.animationName = "leftNext";
+            sliderImgs[currImg].style.animationName = "leftCurr";
+        } else {
+            sliderImgs[nextImg].style.animationName = "rightNext";
+            sliderImgs[currImg].style.animationName = "rightCurr";
         }
-  
+
         prevImg = currImg;
         currImg = nextImg;
-  
+
         currDot = allDots[currImg];
         currDot.classList.add("active-dot");
         prevDot = allDots[prevImg];
         prevDot.classList.remove("active-dot");
-      }
-  
-      /**
-       * Decides if animate to left or right and highlights clicked dot
-       * @param {number} num - index of clicked dot
-       */
-      function dotClick(num) {
+    }
+
+    /**
+     * Decides if animate to left or right and highlights clicked dot
+     * @param {number} num - index of clicked dot
+     */
+    function dotClick(num) {
         if (num == currImg)
-          return false;
-  
+            return false;
+
         clearTimeout(timeout);
         clearInterval(intrvl);
-  
+
         if (num > currImg)
-          animateSlider(num + 1);
+            animateSlider(num + 1);
         else
-          animateSlider(num + 1, true);
-  
+            animateSlider(num + 1, true);
+
         intrvl = setInterval(animateSlider, interval);
-      }
     }
-  }
+}
