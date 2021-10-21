@@ -92,19 +92,20 @@ function setSlider (sectionSlide, sectionSlides, sectionContainer, sectionArrowL
     dots[i].classList.add('slider__handler_last-visible');   
   }
 
-  const changeDotsColor = (newPositionOfScroll) => {
+  const changeDotsColor = (newPositionOfScroll) => {  
+    visibleNumberOfSlides = getVisibleNumberOfSlides();  
     newPositionOfScroll = getNewPositionOfScrollRight();
     slideWithMarginWidth = getWidthSlideWithMargin();
-    const slidesWasShown = Math.ceil(currentPositionOfScroll/slideWithMarginWidth);
+    const slidesWasShown = Math.ceil(currentPositionOfScroll/slideWithMarginWidth);    
     if (currentPositionOfScroll === 0 && (currentPositionOfScroll + slideWithMarginWidth) === newPositionOfScroll) {
-      for (let i = getVisibleNumberOfSlides(); i < dots.length; i++) {
+      for (let i = visibleNumberOfSlides; i < dots.length; i++) {
         dots[i].classList.remove('slider__handler_last-visible');
       } 
     } else {
-      for (let i = 0; i < getVisibleNumberOfSlides() + slidesWasShown; i++) {
+      for (let i = 0; i < visibleNumberOfSlides + slidesWasShown; i++) {
         dots[i].classList.add('slider__handler_last-visible');
       }
-      for (let i = getVisibleNumberOfSlides() + slidesWasShown; i < dots.length; i++) {
+      for (let i = visibleNumberOfSlides + slidesWasShown; i < dots.length; i++) {
         dots[i].classList.remove('slider__handler_last-visible');
       }
     }
@@ -121,25 +122,38 @@ function setSlider (sectionSlide, sectionSlides, sectionContainer, sectionArrowL
   };
   
   const scrollRight = () => {
-    newPositionOfScroll = getNewPositionOfScrollRight();    
-  
+    newPositionOfScroll = getNewPositionOfScrollRight(); 
     scrollSlider(newPositionOfScroll);
-
     changeDotsColor(newPositionOfScroll);
   
   }
   
   const scrollLeft = () => {
-    newPositionOfScroll = getNewPositionOfScrollLeft();
-  
-    scrollSlider(newPositionOfScroll);
-    
-    console.log(newPositionOfScroll);
-
+    newPositionOfScroll = getNewPositionOfScrollLeft();  
+    scrollSlider(newPositionOfScroll);    
     changeDotsColor(newPositionOfScroll);
   }
   
   sliderArrowLeft.addEventListener("click", scrollLeft);
   sliderArrowRight.addEventListener("click", scrollRight); 
+
+  for (let i = 0; i < dots.length; i++) {
+    
+    dots[i].addEventListener('click', function(){  
+      const containerWidth = sliderContainer.clientWidth;
+      slideMargin = getMarginRightOfElement();
+      visibleNumberOfSlides = getVisibleNumberOfSlides();
+      newPositionOfScroll = getNewPositionOfScrollRight();
+      slideWithMarginWidth = getWidthSlideWithMargin();
+      
+      if((i+1)*slideWithMarginWidth < (containerWidth + slideMargin)) {
+        newPositionOfScroll = 0;        
+      } else {
+        newPositionOfScroll = ((i+1)-visibleNumberOfSlides)*slideWithMarginWidth;        
+      } 
+      scrollSlider(newPositionOfScroll);
+      changeDotsColor(newPositionOfScroll);
+    });     
+  }
 
   } 
