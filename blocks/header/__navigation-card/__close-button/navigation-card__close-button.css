@@ -1,0 +1,19 @@
+.navigation-card__close-button {
+    position: relative;
+    margin-left: auto;
+    margin-right: 30px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    border: none;
+    width: 20px;
+    height: 20px;
+    background-image: url(../../../../images/header/close_icon.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    fill: white;
+    background-color: transparent;
+}
+
+.navigation-card__close-button:hover {
+    cursor: url("../../../../images/cursor.svg"), url("../../../../images/cursor.cur"), pointer;
+}

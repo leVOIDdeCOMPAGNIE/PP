@@ -1,34 +1,35 @@
-.navigation-card__button {
+.header__burger-button {
+    position: absolute;
     padding: 0;
     margin: auto;
-    margin-left: 32px;
+    margin-right: 32px;
     margin-top: 29px;
     width: 50px;
     height: 24px;
     border: none;
     background-color: transparent;
     display: none;
-    background-image: url(../../../../images/header/menu_button.svg);
+    background-image: url(../../../images/header/menu_button.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    z-index: 10;
 }
 
-.navigation-card__button:hover {
+.header__burger-button:hover {
     opacity: 0.7;
-    cursor: url("../../../../images/cursor.svg"), url("../../../../images/cursor.cur"), pointer;
+    cursor: url("../../../images/cursor.svg"), url("../../../images/cursor.cur"), pointer;
 }
 
 @media screen and (max-width: 890px) {
-    .navigation-card__button {
+    .header__burger-button {
         display: block;
     }
 }
 
 @media screen and (max-width: 550px) {
-    .navigation-card__button {
+    .header__burger-button {
         width: 43.5px;
         height: 21px;
-        margin-right: 24.15px;
     }
 }
