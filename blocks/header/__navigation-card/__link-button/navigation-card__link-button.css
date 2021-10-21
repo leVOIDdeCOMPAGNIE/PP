@@ -1,0 +1,17 @@
+.navigation-card__link-button {
+    position: relative;
+    margin-left: auto;
+    margin-right: 30px;
+    border: none;
+    width: 20px;
+    height: 20px;
+    background-color: #25a165;
+    background-image: url(../../../../images/header/strelka.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.navigation-card__link-button:hover {
+    cursor: url("../../../../images/cursor.svg"), url("../../../../images/cursor.cur"), pointer;
+}
