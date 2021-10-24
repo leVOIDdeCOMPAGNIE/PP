@@ -1,3 +1,6 @@
+const rellax = new Rellax('.rellax', {
+    center:true    
+});
 const buttonPageUp = document.querySelector('.img-up');
 
 buttonPageUp.addEventListener('click', () => {

@@ -4,6 +4,7 @@
   position: absolute;
   right: 37%;
   bottom: -96px;
+  background-image: url(../../../images/foundation/foundation-pazl-002.svg);
 }
 
 @media screen and (max-width: 640px) {

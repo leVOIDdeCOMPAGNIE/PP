@@ -3,15 +3,3 @@
   width: 100%;
   margin: auto;
 }
-
-@media screen and (max-width: 640px) {
-  .partners__slider_logo {
-    width: 79px;
-  }
-}
-
-@media screen and (max-width: 320px) {
-  .partners__slider_logo {
-    width: 51px;
-  }
-}
